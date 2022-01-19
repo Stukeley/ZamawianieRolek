@@ -1,0 +1,198 @@
+\hypertarget{class_account}{}\doxysection{Dokumentacja klasy Account}
+\label{class_account}\index{Account@{Account}}
+
+
+Klasa przedstawiająca konto użytkownika.  
+
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_account_a3f67327534174e3279b3829f3d2168d5}{Add\+User\+Profile}} (\mbox{\hyperlink{class_user_profile}{User\+Profile}} user\+Profile)
+\begin{DoxyCompactList}\small\item\em Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_account_a08973c5daf5d2db216831698a36161d3}{Select\+User\+Profile}} (string profile\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_account}{Account}} \mbox{\hyperlink{class_account_a71786445daefeae864bd3938eec3810a}{Login\+User}} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Funkcja dokonująca zalogowania użytkownika. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_account}{Account}} \mbox{\hyperlink{class_account_abef4b2cfa9a269db945d7cd7769ac338}{Register\+With\+User\+Data}} (string email, string name, string surname, string password, string phone\+Number)
+\begin{DoxyCompactList}\small\item\em Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_account}{Account}} \mbox{\hyperlink{class_account_af500543527b47c8a6fb5eb2ed58e4223}{Register\+With\+Google\+Account}} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Funkcja rejestrująca nowego użytkownika za pomocą konta Google. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_a8eddc4a572084f9718c603845ba4f3c4}\label{class_account_a8eddc4a572084f9718c603845ba4f3c4}} 
+string {\bfseries Email}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Email użytkownika, podany przy rejestracji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_ad0493ce3ac145f1a6bfb9c5cda7778bf}\label{class_account_ad0493ce3ac145f1a6bfb9c5cda7778bf}} 
+int {\bfseries Money\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ilość pieniędzy pozostałych na koncie użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_af057d0d6ca1c14efc6eccf595c344856}\label{class_account_af057d0d6ca1c14efc6eccf595c344856}} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Imię użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_a5608b2ba6ffd74fccbc03376061e7288}\label{class_account_a5608b2ba6ffd74fccbc03376061e7288}} 
+string {\bfseries Surname}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nazwisko użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_a6e7434203ebfa5913e61c111565070a7}\label{class_account_a6e7434203ebfa5913e61c111565070a7}} 
+string {\bfseries Phone\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Numer telefonu użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_ab52afb1c4f7ef43b68eede609072252b}\label{class_account_ab52afb1c4f7ef43b68eede609072252b}} 
+string {\bfseries Password}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hasło użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_a25908c1b9df9423589217df71c4be680}\label{class_account_a25908c1b9df9423589217df71c4be680}} 
+List$<$ \mbox{\hyperlink{class_user_profile}{User\+Profile}} $>$ {\bfseries User\+Profiles}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista zawierająca profile użytkownika utworzone w ramach jednego konta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_a902ee4e674b2104fe3526fe185a2d889}\label{class_account_a902ee4e674b2104fe3526fe185a2d889}} 
+\mbox{\hyperlink{class_user_profile}{User\+Profile}} {\bfseries Selected\+Profile}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowująca obecnie aktywny profil użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_account_a92f43c642cc5e081d627dadababd90b8}{Account}} (string email, string name, string surname, string phone\+Number, string password)
+\begin{DoxyCompactList}\small\item\em Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa przedstawiająca konto użytkownika. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_account_a92f43c642cc5e081d627dadababd90b8}\label{class_account_a92f43c642cc5e081d627dadababd90b8}} 
+\index{Account@{Account}!Account@{Account}}
+\index{Account@{Account}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{Account()}{Account()}}
+{\footnotesize\ttfamily Account.\+Account (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{name,  }\item[{string}]{surname,  }\item[{string}]{phone\+Number,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em email} & Email nowopowstałego użytkownika.\\
+\hline
+{\em name} & Imię nowopowstałego użytkownika.\\
+\hline
+{\em surname} & Nazwisko nowopowstałego użytkownika.\\
+\hline
+{\em phone\+Number} & Numer telefonu nowopowstałego użytkownika.\\
+\hline
+{\em password} & Hasło nowopowstałego użytkownika.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_account_a3f67327534174e3279b3829f3d2168d5}\label{class_account_a3f67327534174e3279b3829f3d2168d5}} 
+\index{Account@{Account}!AddUserProfile@{AddUserProfile}}
+\index{AddUserProfile@{AddUserProfile}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{AddUserProfile()}{AddUserProfile()}}
+{\footnotesize\ttfamily void Account.\+Add\+User\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_profile}{User\+Profile}}}]{user\+Profile }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user\+Profile} & Profil, który należy dodać do konta.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_account_a71786445daefeae864bd3938eec3810a}\label{class_account_a71786445daefeae864bd3938eec3810a}} 
+\index{Account@{Account}!LoginUser@{LoginUser}}
+\index{LoginUser@{LoginUser}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{LoginUser()}{LoginUser()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_account}{Account}} Account.\+Login\+User (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja dokonująca zalogowania użytkownika. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em email} & Email podany podczas próby logowania.\\
+\hline
+{\em password} & Hasło podane podczas próby logowania.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Odnaleziony w bazie danych użytkownik, jeżeli zgadzają się hasła.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em Exception} & Wyjątek rzucany gdy użytkownik o podanym adresie email nie istnieje, lub gdy podane hasło jest niewłaściwe.\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_account_af500543527b47c8a6fb5eb2ed58e4223}\label{class_account_af500543527b47c8a6fb5eb2ed58e4223}} 
+\index{Account@{Account}!RegisterWithGoogleAccount@{RegisterWithGoogleAccount}}
+\index{RegisterWithGoogleAccount@{RegisterWithGoogleAccount}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{RegisterWithGoogleAccount()}{RegisterWithGoogleAccount()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_account}{Account}} Account.\+Register\+With\+Google\+Account (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja rejestrująca nowego użytkownika za pomocą konta Google. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em email} & Email podany przy rejestracji.\\
+\hline
+{\em password} & Hasło podane przy rejestracji.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_account_abef4b2cfa9a269db945d7cd7769ac338}\label{class_account_abef4b2cfa9a269db945d7cd7769ac338}} 
+\index{Account@{Account}!RegisterWithUserData@{RegisterWithUserData}}
+\index{RegisterWithUserData@{RegisterWithUserData}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{RegisterWithUserData()}{RegisterWithUserData()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_account}{Account}} Account.\+Register\+With\+User\+Data (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{name,  }\item[{string}]{surname,  }\item[{string}]{password,  }\item[{string}]{phone\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em email} & Email podany przy rejestracji.\\
+\hline
+{\em name} & Imię podane przy rejestracji.\\
+\hline
+{\em surname} & Nazwisko podane przy rejestracji.\\
+\hline
+{\em password} & Hasło podane przy rejestracji.\\
+\hline
+{\em phone\+Number} & Numer telefonu podany przy rejestracji.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_account_a08973c5daf5d2db216831698a36161d3}\label{class_account_a08973c5daf5d2db216831698a36161d3}} 
+\index{Account@{Account}!SelectUserProfile@{SelectUserProfile}}
+\index{SelectUserProfile@{SelectUserProfile}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{SelectUserProfile()}{SelectUserProfile()}}
+{\footnotesize\ttfamily void Account.\+Select\+User\+Profile (\begin{DoxyParamCaption}\item[{string}]{profile\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em profile\+Name} & Nazwa profilu, który ma zostać wybrany.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em Exception} & Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje.\\
+\hline
+\end{DoxyExceptions}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Code/\+User/Account.\+cs\end{DoxyCompactItemize}

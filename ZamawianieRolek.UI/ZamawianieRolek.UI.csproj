@@ -6,6 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>C:\Programowanie\ZamawianieRolek\ZamawianieRolek.UI\ZamawianieRolek.UI.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
       <ProjectReference Include="..\ZamawianieRolek.Code\ZamawianieRolek.Code.csproj" />
     </ItemGroup>

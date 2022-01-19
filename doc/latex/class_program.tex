@@ -1,0 +1,63 @@
+\hypertarget{class_program}{}\doxysection{Dokumentacja klasy Program}
+\label{class_program}\index{Program@{Program}}
+
+
+Główna klasa interfejsu użytkownika, zawierająca funkcję Main oraz funkcje odpowiedzialne za komunikację aplikacji z użytkownikiem.  
+
+
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_program_ad22b0f776312e09174fc36a1e4bade60}\label{class_program_ad22b0f776312e09174fc36a1e4bade60}} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em Punkt wejściowy aplikacji. Funkcja dokonuje serializacji oraz deserializacji bazy danych, oraz wyświetla użytkownikowi menu aplikacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_program_a92942dce7a2ab4f4d03faf22d2b37058}\label{class_program_a92942dce7a2ab4f4d03faf22d2b37058}} 
+static bool {\bfseries \+\_\+is\+Logged\+In}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość zwracająca wartość true, jeżeli użytkownik jest zalogowany. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_a13287fa4f799681145909749f391402d}\label{class_program_a13287fa4f799681145909749f391402d}} 
+static bool {\bfseries \+\_\+is\+User\+Profile\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość zwracająca wartość true, jeżeli użytkownik wybrał profil. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_program_a2409992ebd12c0fe90d7329e76d6d4fa}\label{class_program_a2409992ebd12c0fe90d7329e76d6d4fa}} 
+static void {\bfseries Register\+New\+User} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby rejestracji użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do rejestracji dane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_ad98413308183fec5b3926f5bb0ecd2bb}\label{class_program_ad98413308183fec5b3926f5bb0ecd2bb}} 
+static void {\bfseries Login\+User} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby zalogowania użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do logowania dane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_aa6fc50d60e61598a7e967a6b3fef7da0}\label{class_program_aa6fc50d60e61598a7e967a6b3fef7da0}} 
+static void {\bfseries Create\+User\+Profile} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby stworzenia nowego profilu użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do utworzenia profilu dane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_abd4523214f81cb8b63b4c494f2edff78}\label{class_program_abd4523214f81cb8b63b4c494f2edff78}} 
+static void {\bfseries Select\+User\+Profile} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby wyboru profilu użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne dane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_acad66c2e9b483860d388369f67d755c7}\label{class_program_acad66c2e9b483860d388369f67d755c7}} 
+static void {\bfseries Display\+All\+Sheds} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby wyświetlenia na ekranie listy dostępnych wiat. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_ae6450f2f98ceb56e3e4dc6100b08ff73}\label{class_program_ae6450f2f98ceb56e3e4dc6100b08ff73}} 
+static void {\bfseries Lend\+Skates} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby rozpoczęcia wypożyczenia wrotek przez użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do wypożyczenia dane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_a63f9fc65d9512ff4887662f4df9f0e53}\label{class_program_a63f9fc65d9512ff4887662f4df9f0e53}} 
+static void {\bfseries Finish\+Ride} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby oddania przez użytkownika wypożyczonych wrotek. Wyświetla na ekranie konsoli stosowne informacje, w tym koszt przejazdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_program_ac66fd048bf16aa9d4433f6ee2645841a}\label{class_program_ac66fd048bf16aa9d4433f6ee2645841a}} 
+static void {\bfseries Switch\+Turbo} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wywoływana w przypadku próby przełączenia trybu turbo w wypożyczonych wrotkach. Jeżeli tryb turbo jest włączony, zostanie on wyłączony; jeżeli nie, wówczas zostanie on włączony. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_program_aa93d521bf85bc2d063126776d0788658}\label{class_program_aa93d521bf85bc2d063126776d0788658}} 
+static \mbox{\hyperlink{class_account}{Account}} {\bfseries \+\_\+current\+Account}
+\begin{DoxyCompactList}\small\item\em Obecnie aktywne konto użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Główna klasa interfejsu użytkownika, zawierająca funkcję Main oraz funkcje odpowiedzialne za komunikację aplikacji z użytkownikiem. 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+UI/Program.\+cs\end{DoxyCompactItemize}

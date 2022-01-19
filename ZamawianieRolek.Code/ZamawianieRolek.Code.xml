@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZamawianieRolek.Code</name>
+    </assembly>
+    <members>
+        <member name="T:ZamawianieRolek.Code.System.Database">
+            <summary>
+            Klasa reprezentująca bazę danych, przechowującą informacje o użytkownikach (zarejestrowanych kontach) oraz dostępnych wiatach z wrotkami.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Database.Accounts">
+            <summary>
+            Lista zarejestrowanych w aplikacji kont.
+            Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku.
+            Podczas działania programu jest na bieżąco aktualizowana.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Database.Sheds">
+            <summary>
+            Lista dostępnych w aplikacji wiat, w których można wypożyczyć wrotki.
+            Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku.
+            Przy pierwszym uruchomieniu programu lista jest automatycznie zapełniana przykładowymi wartościami.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Database.AddAccountToDatabase(ZamawianieRolek.Code.User.Account)">
+            <summary>
+            Funkcja odpowiedzialna za dodanie nowego konta do bazy danych.
+            </summary>
+            <param name="newAccount">Konto użytkownika do dodania.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Database.AddShedToDatabase(ZamawianieRolek.Code.System.Shed)">
+            <summary>
+            Funkcja odpowiedzialna za dodanie nowej wiaty do bazy danych.
+            </summary>
+            <param name="newShed">Wiata do dodania.</param>
+        </member>
+        <member name="T:ZamawianieRolek.Code.System.Ride">
+            <summary>
+            Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.Skates">
+            <summary>
+            Wrotki, które są wykorzystywane przez użytkownika do przejazdu.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.StartTime">
+            <summary>
+            Data początkowa przejazdu.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.FinishTime">
+            <summary>
+            Data końcowa przejazdu.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.TurboTime">
+            <summary>
+            Łączny czas spędzony przez użytkownika w trybie turbo.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.Distance">
+            <summary>
+            Łączny dystans przejechany przez użytkownika w ramach jednego przejazdu.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Ride.RidePrice">
+            <summary>
+            Cena przejazdu.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Ride.EvaluatePrice">
+            <summary>
+            Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny.
+            Funkcja ustawia wartość pola RidePrice.
+            </summary>
+            <returns>Obliczona cena przejazdu.</returns>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Ride.EvaluateTime">
+            <summary>
+            Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach.
+            </summary>
+            <returns>Czas przejazdu w minutach, bez uwzględnienia części ułamkowej.</returns>
+        </member>
+        <member name="T:ZamawianieRolek.Code.System.Seeding">
+            <summary>
+            Statyczna klasa wykorzystywana na potrzeby seedowania bazy danych przy pierwszym uruchomieniu aplikacji.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Seeding.SeedData">
+            <summary>
+            Funkcja seedująca listę Sheds bazy danych, przy pierwszym uruchomieniu aplikacji, za pomocą przykładowych danych wiat i wypożyczalnych wrotek.
+            </summary>
+        </member>
+        <member name="T:ZamawianieRolek.Code.System.Serialization">
+            <summary>
+            Klasa odpowiedzialna za serializację i deserializację danych - zarówno dotyczących kont użytkowników, jak i dostępnych wiat.
+            </summary>
+        </member>
+        <member name="F:ZamawianieRolek.Code.System.Serialization.AccountDataFileName">
+            <summary>
+            Ścieżka do pliku zawierającego zapisane konta użytkowników.
+            </summary>
+        </member>
+        <member name="F:ZamawianieRolek.Code.System.Serialization.ShedDataFileName">
+            <summary>
+            Ścieżka do pliku zawierającego zapisane wiaty.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Serialization.SerializeDatabase">
+            <summary>
+            Funkcja serializująca dane kont użytkowników oraz wiat do plików o rozszerzeniu JSON.
+            Funkcja ta jest wywoływana tuż przed zakończeniem działania programu.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Serialization.DeserializeDatabase">
+            <summary>
+            Funkcja deserializująca dane kont użytkowników oraz wiat z plików o rozszerzeniu JSON (jeżeli istnieją).
+            Funkcja ta jest wywoływana tuż po rozpoczęciu działania programu.
+            </summary>
+        </member>
+        <member name="T:ZamawianieRolek.Code.System.Shed">
+            <summary>
+            Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Shed.Id">
+            <summary>
+            Id wiaty.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Shed.TotalSkates">
+            <summary>
+            Łączna ilość wrotek, które znajdują się w wiacie.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Shed.TakenSkates">
+            <summary>
+            Ilość wrotek, które zostały wypożyczone i są obecnie niedostępne.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Shed.Localisation">
+            <summary>
+            Lokalizacja wiaty.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Shed.AvailableSkates">
+            <summary>
+            Lista zawierająca wszystkie dostępne do wypożyczenia w wiacie wrotki.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Shed.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami.
+            </summary>
+            <param name="totalSkates">Ilość wrotek, które znajdują się w nowopowstałej wiacie.</param>
+            <param name="id">Id nowopowstałej wiaty.</param>
+            <param name="localisation">Lokalizacja nowopowstałej wiaty.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Shed.OpenLocker">
+            <summary>
+            Funkcja otwierająca szafkę z wrotkami, wywoływana w momencie wypożyczenia wrotek przez użytkownika.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Shed.LockLocker">
+            <summary>
+            Funkcja zamykająca szafkę z wrotkami, wywoływana bezpośrednio po funkcji OpenLocker.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Shed.ToString">
+            <summary>
+            Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis.
+            </summary>
+            <returns>Napis, przedstawiający wiatę, gotowy do wyświetlenia np. w oknie konsoli.</returns>
+        </member>
+        <member name="T:ZamawianieRolek.Code.System.Skates">
+            <summary>
+            Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.ModelName">
+            <summary>
+            Nazwa modelu wrotek.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.Image">
+            <summary>
+            Obraz jako tablica bajtów, przedstawiający wrotki.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.Size">
+            <summary>
+            Rozmiar wrotek.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.Condition">
+            <summary>
+            Stan wrotek.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.IsTurboActive">
+            <summary>
+            Zmienna informująca, czy w danym momencie aktywny jest tryb turbo.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.BatteryPercentage">
+            <summary>
+            Stan baterii wrotek - liczba z przedziału od 0.00 do 1.00.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.System.Skates.IsLent">
+            <summary>
+            Zmienna informująca, czy wrotki są w danym momencie wypożyczone.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Skates.#ctor(System.String,System.Byte[],System.Single,System.Boolean)">
+            <summary>
+            Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami.
+            Bateria jest początkowo ustawiana na wartość 1.00.
+            </summary>
+            <param name="modelName">Nazwa modelu nowopowstałych wrotek.</param>
+            <param name="image">Zdjęcie nowopowstałych wrotek.</param>
+            <param name="size">Rozmiar nowopowstałych wrotek.</param>
+            <param name="condition">Stan nowopowstałych wrotek.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Skates.Turbo">
+            <summary>
+            Funkcja przełączająca tryb turbo we wrotkach.
+            Jeżeli turbo jest aktywne, wówczas zostanie wyłączone; jeżeli nie, zostanie włączone.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.System.Skates.ToString">
+            <summary>
+            Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis.
+            </summary>
+            <returns>Napis, przedstawiający wrotki, gotowy do wyświetlenia np. w oknie konsoli.</returns>
+        </member>
+        <member name="T:ZamawianieRolek.Code.User.Account">
+            <summary>
+            Klasa przedstawiająca konto użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.Email">
+            <summary>
+            Email użytkownika, podany przy rejestracji.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.MoneyLeft">
+            <summary>
+            Ilość pieniędzy pozostałych na koncie użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.Name">
+            <summary>
+            Imię użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.Surname">
+            <summary>
+            Nazwisko użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.PhoneNumber">
+            <summary>
+            Numer telefonu użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.Password">
+            <summary>
+            Hasło użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.UserProfiles">
+            <summary>
+            Lista zawierająca profile użytkownika utworzone w ramach jednego konta.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.Account.SelectedProfile">
+            <summary>
+            Zmienna przechowująca obecnie aktywny profil użytkownika.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami.
+            </summary>
+            <param name="email">Email nowopowstałego użytkownika.</param>
+            <param name="name">Imię nowopowstałego użytkownika.</param>
+            <param name="surname">Nazwisko nowopowstałego użytkownika.</param>
+            <param name="phoneNumber">Numer telefonu nowopowstałego użytkownika.</param>
+            <param name="password">Hasło nowopowstałego użytkownika.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.LoginUser(System.String,System.String)">
+            <summary>
+            Funkcja dokonująca zalogowania użytkownika.
+            Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych.
+            </summary>
+            <param name="email">Email podany podczas próby logowania.</param>
+            <param name="password">Hasło podane podczas próby logowania.</param>
+            <returns>Odnaleziony w bazie danych użytkownik, jeżeli zgadzają się hasła.</returns>
+            <exception cref="T:System.Exception">Wyjątek rzucany gdy użytkownik o podanym adresie email nie istnieje, lub gdy podane hasło jest niewłaściwe.</exception>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.RegisterWithUserData(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika.
+            </summary>
+            <param name="email">Email podany przy rejestracji.</param>
+            <param name="name">Imię podane przy rejestracji.</param>
+            <param name="surname">Nazwisko podane przy rejestracji.</param>
+            <param name="password">Hasło podane przy rejestracji.</param>
+            <param name="phoneNumber">Numer telefonu podany przy rejestracji.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.RegisterWithGoogleAccount(System.String,System.String)">
+            <summary>
+            Funkcja rejestrująca nowego użytkownika za pomocą konta Google.
+            Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie.
+            </summary>
+            <param name="email">Email podany przy rejestracji.</param>
+            <param name="password">Hasło podane przy rejestracji.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.AddUserProfile(ZamawianieRolek.Code.User.UserProfile)">
+            <summary>
+            Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil.
+            </summary>
+            <param name="userProfile">Profil, który należy dodać do konta.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.SelectUserProfile(System.String)">
+            <summary>
+            Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil.
+            </summary>
+            <param name="profileName">Nazwa profilu, który ma zostać wybrany.</param>
+            <exception cref="T:System.Exception">Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje.</exception>
+        </member>
+        <member name="T:ZamawianieRolek.Code.User.PaymentMethod">
+            <summary>
+            Typ wyliczeniowy, zawierający możliwe w aplikacji metody płatności - karta kredytowa lub konto PayPal.
+            </summary>
+        </member>
+        <member name="T:ZamawianieRolek.Code.User.UserProfile">
+            <summary>
+            Klasa przedstawiająca profil użytkownika w ramach konta.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.UserProfile.Name">
+            <summary>
+            Nazwa profilu użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.UserProfile.FootSize">
+            <summary>
+            Rozmiar stopy użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.UserProfile.PaymentMethod">
+            <summary>
+            Metoda płatności podłączona do profilu.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.Code.User.UserProfile.Ride">
+            <summary>
+            Obecnie aktywny przejazd użytkownika.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.UserProfile.#ctor(System.String,System.Single,ZamawianieRolek.Code.User.PaymentMethod)">
+            <summary>
+            Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami.
+            </summary>
+            <param name="name">Nazwa nowopowstałego profilu.</param>
+            <param name="footSize">Rozmiar stopy użytkownika.</param>
+            <param name="paymentMethod">Wybrany przez użytkownika sposób płatności.</param>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.UserProfile.CreateUser(System.String,System.Single,ZamawianieRolek.Code.User.PaymentMethod)">
+            <summary>
+            Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika.
+            </summary>
+            <param name="name">Nazwa podana przy tworzeniu profilu.</param>
+            <param name="footSize">Rozmiar stopy podany przy tworzeniu profilu.</param>
+            <param name="paymentMethod">Metoda płatności wybrana przy tworzeniu profilu.</param>
+            <returns>Utworzony profil użytkownika.</returns>
+        </member>
+    </members>
+</doc>

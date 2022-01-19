@@ -5,4 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>C:\Programowanie\ZamawianieRolek\ZamawianieRolek.Code\ZamawianieRolek.Code.xml</DocumentationFile>
+    </PropertyGroup>
+
 </Project>

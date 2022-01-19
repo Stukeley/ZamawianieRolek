@@ -1,0 +1,72 @@
+\hypertarget{class_ride}{}\doxysection{Dokumentacja klasy Ride}
+\label{class_ride}\index{Ride@{Ride}}
+
+
+Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika.  
+
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_ride_a72ca790b63cb4438eaaa2adac5c1c69a}{Evaluate\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny. Funkcja ustawia wartość pola Ride\+Price. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ride_ab45cce9ee05d31d87452af50eb0fe2d0}{Evaluate\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ride_a01adcd334a94609e6d052c7c26089f22}\label{class_ride_a01adcd334a94609e6d052c7c26089f22}} 
+\mbox{\hyperlink{class_skates}{Skates}} {\bfseries Skates}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wrotki, które są wykorzystywane przez użytkownika do przejazdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ride_a373b014dfa655fe9d4258ec040fe69ae}\label{class_ride_a373b014dfa655fe9d4258ec040fe69ae}} 
+Date\+Time {\bfseries Start\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data początkowa przejazdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ride_ab6ad21eb918a921206ff96d53a9d7552}\label{class_ride_ab6ad21eb918a921206ff96d53a9d7552}} 
+Date\+Time {\bfseries Finish\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data końcowa przejazdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ride_ae7385b6828c208354d644eee50b715f0}\label{class_ride_ae7385b6828c208354d644eee50b715f0}} 
+int {\bfseries Turbo\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Łączny czas spędzony przez użytkownika w trybie turbo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ride_a4024f4822b8989d09b0aaa2b13b13e4d}\label{class_ride_a4024f4822b8989d09b0aaa2b13b13e4d}} 
+int {\bfseries Distance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Łączny dystans przejechany przez użytkownika w ramach jednego przejazdu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ride_ae0118a214359126480aed70ec2021c04}\label{class_ride_ae0118a214359126480aed70ec2021c04}} 
+float {\bfseries Ride\+Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Cena przejazdu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_ride_a72ca790b63cb4438eaaa2adac5c1c69a}\label{class_ride_a72ca790b63cb4438eaaa2adac5c1c69a}} 
+\index{Ride@{Ride}!EvaluatePrice@{EvaluatePrice}}
+\index{EvaluatePrice@{EvaluatePrice}!Ride@{Ride}}
+\doxysubsubsection{\texorpdfstring{EvaluatePrice()}{EvaluatePrice()}}
+{\footnotesize\ttfamily float Ride.\+Evaluate\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny. Funkcja ustawia wartość pola Ride\+Price. 
+
+\begin{DoxyReturn}{Zwraca}
+Obliczona cena przejazdu.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ride_ab45cce9ee05d31d87452af50eb0fe2d0}\label{class_ride_ab45cce9ee05d31d87452af50eb0fe2d0}} 
+\index{Ride@{Ride}!EvaluateTime@{EvaluateTime}}
+\index{EvaluateTime@{EvaluateTime}!Ride@{Ride}}
+\doxysubsubsection{\texorpdfstring{EvaluateTime()}{EvaluateTime()}}
+{\footnotesize\ttfamily int Ride.\+Evaluate\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach. 
+
+\begin{DoxyReturn}{Zwraca}
+Czas przejazdu w minutach, bez uwzględnienia części ułamkowej.
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Code/\+System/Ride.\+cs\end{DoxyCompactItemize}

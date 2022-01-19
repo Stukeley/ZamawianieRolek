@@ -1,0 +1,89 @@
+\hypertarget{class_skates}{}\doxysection{Dokumentacja klasy Skates}
+\label{class_skates}\index{Skates@{Skates}}
+
+
+Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie.  
+
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_skates_a0231754f63ff17d2fa50a45274a7c1ff}{Skates}} (string model\+Name, byte\mbox{[}$\,$\mbox{]} image, float size, bool condition)
+\begin{DoxyCompactList}\small\item\em Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. Bateria jest początkowo ustawiana na wartość 1.\+00. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_ab6eac4299a6cbce156cf11a3d3aeef9b}\label{class_skates_ab6eac4299a6cbce156cf11a3d3aeef9b}} 
+void {\bfseries Turbo} ()
+\begin{DoxyCompactList}\small\item\em Funkcja przełączająca tryb turbo we wrotkach. Jeżeli turbo jest aktywne, wówczas zostanie wyłączone; jeżeli nie, zostanie włączone. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_skates_a93d78c56c89ae9bc74aa4b454840db0a}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_skates_aac69e7eba05e3996f23ff0f0d695b324}\label{class_skates_aac69e7eba05e3996f23ff0f0d695b324}} 
+string {\bfseries Model\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nazwa modelu wrotek. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_aa891b9e7706e066e2f18724720be4f10}\label{class_skates_aa891b9e7706e066e2f18724720be4f10}} 
+byte\mbox{[}$\,$\mbox{]} {\bfseries Image}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obraz jako tablica bajtów, przedstawiający wrotki. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_ad874a83db2d8ede8052b26b1ad67d249}\label{class_skates_ad874a83db2d8ede8052b26b1ad67d249}} 
+float {\bfseries Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Rozmiar wrotek. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_a6061ee801f5f0f58588ae6ac499287e7}\label{class_skates_a6061ee801f5f0f58588ae6ac499287e7}} 
+bool {\bfseries Condition}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stan wrotek. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_a70c68f0d926ed308eb0057ae1823b7dc}\label{class_skates_a70c68f0d926ed308eb0057ae1823b7dc}} 
+bool {\bfseries Is\+Turbo\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zmienna informująca, czy w danym momencie aktywny jest tryb turbo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_a91f430ca42aef102fce8f9c61e027d62}\label{class_skates_a91f430ca42aef102fce8f9c61e027d62}} 
+float {\bfseries Battery\+Percentage}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stan baterii wrotek -\/ liczba z przedziału od 0.\+00 do 1.\+00. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_skates_aaf7944da2beced6bccc3c057636980ca}\label{class_skates_aaf7944da2beced6bccc3c057636980ca}} 
+bool {\bfseries Is\+Lent}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zmienna informująca, czy wrotki są w danym momencie wypożyczone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_skates_a0231754f63ff17d2fa50a45274a7c1ff}\label{class_skates_a0231754f63ff17d2fa50a45274a7c1ff}} 
+\index{Skates@{Skates}!Skates@{Skates}}
+\index{Skates@{Skates}!Skates@{Skates}}
+\doxysubsubsection{\texorpdfstring{Skates()}{Skates()}}
+{\footnotesize\ttfamily Skates.\+Skates (\begin{DoxyParamCaption}\item[{string}]{model\+Name,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{image,  }\item[{float}]{size,  }\item[{bool}]{condition }\end{DoxyParamCaption})}
+
+
+
+Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. Bateria jest początkowo ustawiana na wartość 1.\+00. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em model\+Name} & Nazwa modelu nowopowstałych wrotek.\\
+\hline
+{\em image} & Zdjęcie nowopowstałych wrotek.\\
+\hline
+{\em size} & Rozmiar nowopowstałych wrotek.\\
+\hline
+{\em condition} & Stan nowopowstałych wrotek.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_skates_a93d78c56c89ae9bc74aa4b454840db0a}\label{class_skates_a93d78c56c89ae9bc74aa4b454840db0a}} 
+\index{Skates@{Skates}!ToString@{ToString}}
+\index{ToString@{ToString}!Skates@{Skates}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Skates.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. 
+
+\begin{DoxyReturn}{Zwraca}
+Napis, przedstawiający wrotki, gotowy do wyświetlenia np. w oknie konsoli.
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Code/\+System/Skates.\+cs\end{DoxyCompactItemize}

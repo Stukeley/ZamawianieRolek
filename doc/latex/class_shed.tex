@@ -1,0 +1,84 @@
+\hypertarget{class_shed}{}\doxysection{Dokumentacja klasy Shed}
+\label{class_shed}\index{Shed@{Shed}}
+
+
+Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć.  
+
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shed_a99ef7704b533e3042b8d23589adc5fda}{Shed}} (int total\+Skates, int id, string localisation)
+\begin{DoxyCompactList}\small\item\em Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_ad7fe287cdc4d47b1832bd5c3f9daf98c}\label{class_shed_ad7fe287cdc4d47b1832bd5c3f9daf98c}} 
+void {\bfseries Open\+Locker} ()
+\begin{DoxyCompactList}\small\item\em Funkcja otwierająca szafkę z wrotkami, wywoływana w momencie wypożyczenia wrotek przez użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_aea4adab23a70cd2425a8e1cc186b1be6}\label{class_shed_aea4adab23a70cd2425a8e1cc186b1be6}} 
+void {\bfseries Lock\+Locker} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zamykająca szafkę z wrotkami, wywoływana bezpośrednio po funkcji Open\+Locker. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_shed_a679bd93ae07390c31107b67966bb33d8}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shed_aa71d7338b9267baf3f885107d4389cd3}\label{class_shed_aa71d7338b9267baf3f885107d4389cd3}} 
+int {\bfseries Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Id wiaty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_a7587b4e01cfcac0f37ca256c8ad9fed2}\label{class_shed_a7587b4e01cfcac0f37ca256c8ad9fed2}} 
+int {\bfseries Total\+Skates}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Łączna ilość wrotek, które znajdują się w wiacie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_a7ae42288850a39a3ccd357435a4a2baf}\label{class_shed_a7ae42288850a39a3ccd357435a4a2baf}} 
+int {\bfseries Taken\+Skates}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Ilość wrotek, które zostały wypożyczone i są obecnie niedostępne. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_aa3f5f1fbe465365a76bf92792cd463b7}\label{class_shed_aa3f5f1fbe465365a76bf92792cd463b7}} 
+string {\bfseries Localisation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lokalizacja wiaty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shed_a71a528955b1d326b084a6b6cd215f7f7}\label{class_shed_a71a528955b1d326b084a6b6cd215f7f7}} 
+List$<$ \mbox{\hyperlink{class_skates}{Skates}} $>$ {\bfseries Available\+Skates}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista zawierająca wszystkie dostępne do wypożyczenia w wiacie wrotki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_shed_a99ef7704b533e3042b8d23589adc5fda}\label{class_shed_a99ef7704b533e3042b8d23589adc5fda}} 
+\index{Shed@{Shed}!Shed@{Shed}}
+\index{Shed@{Shed}!Shed@{Shed}}
+\doxysubsubsection{\texorpdfstring{Shed()}{Shed()}}
+{\footnotesize\ttfamily Shed.\+Shed (\begin{DoxyParamCaption}\item[{int}]{total\+Skates,  }\item[{int}]{id,  }\item[{string}]{localisation }\end{DoxyParamCaption})}
+
+
+
+Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em total\+Skates} & Ilość wrotek, które znajdują się w nowopowstałej wiacie.\\
+\hline
+{\em id} & Id nowopowstałej wiaty.\\
+\hline
+{\em localisation} & Lokalizacja nowopowstałej wiaty.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_shed_a679bd93ae07390c31107b67966bb33d8}\label{class_shed_a679bd93ae07390c31107b67966bb33d8}} 
+\index{Shed@{Shed}!ToString@{ToString}}
+\index{ToString@{ToString}!Shed@{Shed}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Shed.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. 
+
+\begin{DoxyReturn}{Zwraca}
+Napis, przedstawiający wiatę, gotowy do wyświetlenia np. w oknie konsoli.
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Code/\+System/Shed.\+cs\end{DoxyCompactItemize}

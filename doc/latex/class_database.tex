@@ -1,0 +1,64 @@
+\hypertarget{class_database}{}\doxysection{Dokumentacja klasy Database}
+\label{class_database}\index{Database@{Database}}
+
+
+Klasa reprezentująca bazę danych, przechowującą informacje o użytkownikach (zarejestrowanych kontach) oraz dostępnych wiatach z wrotkami.  
+
+
+\doxysubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_database_a76ce33324145d5a1f22f996bc663fcac}{Add\+Account\+To\+Database}} (\mbox{\hyperlink{class_account}{Account}} new\+Account)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za dodanie nowego konta do bazy danych. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_database_a3589bc92bf9421fde1377a067104f255}{Add\+Shed\+To\+Database}} (\mbox{\hyperlink{class_shed}{Shed}} new\+Shed)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za dodanie nowej wiaty do bazy danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_a032f060115c022c57a1dc3f0057320a7}\label{class_database_a032f060115c022c57a1dc3f0057320a7}} 
+static List$<$ \mbox{\hyperlink{class_account}{Account}} $>$ {\bfseries Accounts}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista zarejestrowanych w aplikacji kont. Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku. Podczas działania programu jest na bieżąco aktualizowana. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_a6ccd6db4e7ee4a4ca20d0a5209bf1ae6}\label{class_database_a6ccd6db4e7ee4a4ca20d0a5209bf1ae6}} 
+static List$<$ \mbox{\hyperlink{class_shed}{Shed}} $>$ {\bfseries Sheds}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lista dostępnych w aplikacji wiat, w których można wypożyczyć wrotki. Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku. Przy pierwszym uruchomieniu programu lista jest automatycznie zapełniana przykładowymi wartościami. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa reprezentująca bazę danych, przechowującą informacje o użytkownikach (zarejestrowanych kontach) oraz dostępnych wiatach z wrotkami. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_database_a76ce33324145d5a1f22f996bc663fcac}\label{class_database_a76ce33324145d5a1f22f996bc663fcac}} 
+\index{Database@{Database}!AddAccountToDatabase@{AddAccountToDatabase}}
+\index{AddAccountToDatabase@{AddAccountToDatabase}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{AddAccountToDatabase()}{AddAccountToDatabase()}}
+{\footnotesize\ttfamily static void Database.\+Add\+Account\+To\+Database (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_account}{Account}}}]{new\+Account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja odpowiedzialna za dodanie nowego konta do bazy danych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Account} & Konto użytkownika do dodania.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_database_a3589bc92bf9421fde1377a067104f255}\label{class_database_a3589bc92bf9421fde1377a067104f255}} 
+\index{Database@{Database}!AddShedToDatabase@{AddShedToDatabase}}
+\index{AddShedToDatabase@{AddShedToDatabase}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{AddShedToDatabase()}{AddShedToDatabase()}}
+{\footnotesize\ttfamily static void Database.\+Add\+Shed\+To\+Database (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shed}{Shed}}}]{new\+Shed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Funkcja odpowiedzialna za dodanie nowej wiaty do bazy danych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Shed} & Wiata do dodania.\\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Code/\+System/Database.\+cs\end{DoxyCompactItemize}

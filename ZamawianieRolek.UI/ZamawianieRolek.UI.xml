@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZamawianieRolek.UI</name>
+    </assembly>
+    <members>
+        <member name="T:ZamawianieRolek.UI.Program">
+            <summary>
+            Główna klasa interfejsu użytkownika, zawierająca funkcję Main oraz funkcje odpowiedzialne za komunikację aplikacji z użytkownikiem.
+            </summary>
+        </member>
+        <member name="F:ZamawianieRolek.UI.Program._currentAccount">
+            <summary>
+            Obecnie aktywne konto użytkownika.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.UI.Program._isLoggedIn">
+            <summary>
+            Właściwość zwracająca wartość true, jeżeli użytkownik jest zalogowany.
+            </summary>
+        </member>
+        <member name="P:ZamawianieRolek.UI.Program._isUserProfileSelected">
+            <summary>
+            Właściwość zwracająca wartość true, jeżeli użytkownik wybrał profil.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.Main">
+            <summary>
+            Punkt wejściowy aplikacji.
+            Funkcja dokonuje serializacji oraz deserializacji bazy danych, oraz wyświetla użytkownikowi menu aplikacji.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.RegisterNewUser">
+            <summary>
+            Funkcja wywoływana w przypadku próby rejestracji użytkownika.
+            Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do rejestracji dane.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.LoginUser">
+            <summary>
+            Funkcja wywoływana w przypadku próby zalogowania użytkownika.
+            Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do logowania dane.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.CreateUserProfile">
+            <summary>
+            Funkcja wywoływana w przypadku próby stworzenia nowego profilu użytkownika.
+            Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do utworzenia profilu dane.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.SelectUserProfile">
+            <summary>
+            Funkcja wywoływana w przypadku próby wyboru profilu użytkownika.
+            Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne dane.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.DisplayAllSheds">
+            <summary>
+            Funkcja wywoływana w przypadku próby wyświetlenia na ekranie listy dostępnych wiat.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.LendSkates">
+            <summary>
+            Funkcja wywoływana w przypadku próby rozpoczęcia wypożyczenia wrotek przez użytkownika.
+            Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do wypożyczenia dane.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.FinishRide">
+            <summary>
+            Funkcja wywoływana w przypadku próby oddania przez użytkownika wypożyczonych wrotek.
+            Wyświetla na ekranie konsoli stosowne informacje, w tym koszt przejazdu.
+            </summary>
+        </member>
+        <member name="M:ZamawianieRolek.UI.Program.SwitchTurbo">
+            <summary>
+            Funkcja wywoływana w przypadku próby przełączenia trybu turbo w wypożyczonych wrotkach.
+            Jeżeli tryb turbo jest włączony, zostanie on wyłączony; jeżeli nie, wówczas zostanie on włączony.
+            </summary>
+        </member>
+    </members>
+</doc>
