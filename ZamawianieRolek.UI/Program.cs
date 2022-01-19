@@ -1,27 +1,34 @@
 ﻿using System.Globalization;
 using System.Text;
-using ZamawianieRolek.Code;
+using ZamawianieRolek.Code.System;
+using ZamawianieRolek.Code.User;
 
-public class Program
+namespace ZamawianieRolek.UI;
+
+/// <summary>
+/// Główna klasa interfejsu użytkownika, zawierająca funkcję Main oraz funkcje odpowiedzialne za komunikację aplikacji z użytkownikiem.
+/// </summary>
+public static class Program
 {
+	/// <summary>
+	/// Obecnie aktywne konto użytkownika.
+	/// </summary>
 	private static Account _currentAccount;
+	
+	/// <summary>
+	/// Właściwość zwracająca wartość true, jeżeli użytkownik jest zalogowany.
+	/// </summary>
+	private static bool _isLoggedIn => _currentAccount != null;
+	
+	/// <summary>
+	/// Właściwość zwracająca wartość true, jeżeli użytkownik wybrał profil.
+	/// </summary>
+	private static bool _isUserProfileSelected => _currentAccount?.SelectedProfile != null;
 
-	private static bool IsLoggedIn
-	{
-		get
-		{
-			return _currentAccount != null;
-		}
-	}
-
-	private static bool IsUserProfileSelected
-	{
-		get
-		{
-			return _currentAccount?.SelectedProfile != null;
-		}
-	}
-
+	/// <summary>
+	/// Punkt wejściowy aplikacji.
+	/// Funkcja dokonuje serializacji oraz deserializacji bazy danych, oraz wyświetla użytkownikowi menu aplikacji.
+	/// </summary>
 	public static void Main()
 	{
 		Serialization.DeserializeDatabase();
@@ -31,21 +38,21 @@ public class Program
 		while (isRepeated)
 		{
 			Console.WriteLine("=========================================");
-			if (IsLoggedIn)
+			if (_isLoggedIn)
 			{
 				Console.WriteLine($"ACCOUNT: {_currentAccount.Name} {_currentAccount.Surname}");
-				if (IsUserProfileSelected)
+				if (_isUserProfileSelected)
 				{
 					Console.WriteLine($"USER PROFILE: {_currentAccount.SelectedProfile.Name}");
 				}
 				else
 				{
-					Console.WriteLine($"USER PROFILE: ---not selected---");
+					Console.WriteLine("USER PROFILE: ---not selected---");
 				}
 			}
 			else
 			{
-				Console.WriteLine($"ACCOUNT: ---not logged in---");
+				Console.WriteLine("ACCOUNT: ---not logged in---");
 			}
 			Console.WriteLine("=========================================");
 			Console.WriteLine("CHOOSE AN OPTION:");
@@ -55,16 +62,21 @@ public class Program
 			Console.WriteLine("4  - Select a user profile");
 			Console.WriteLine("=========================================");
 
-			if (IsLoggedIn && IsUserProfileSelected)
+			if (_isLoggedIn && _isUserProfileSelected)
 			{
 				Console.WriteLine("5  - Display all sheds");
 				Console.WriteLine("6  - Lend skates");
 				Console.WriteLine("7  - Finish ride");
 				Console.WriteLine("=========================================");
+
+				if (_currentAccount.SelectedProfile.Ride != null)
+				{
+					Console.WriteLine("8 - Activate Turbo mode");
+					Console.WriteLine("=========================================");
+				}
 			}
 
 			Console.WriteLine("X - Exit application");
-
 
 			string chosenOption = Console.ReadLine();
 
@@ -98,11 +110,12 @@ public class Program
 					FinishRide();
 					break;
 
-				case "x":
-					isRepeated = false;
+				case "8":
+					SwitchTurbo();
 					break;
 
-				default:
+				case "x":
+					isRepeated = false;
 					break;
 			}
 
@@ -113,34 +126,40 @@ public class Program
 		Serialization.SerializeDatabase();
 	}
 
-	public static void RegisterNewUser()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby rejestracji użytkownika.
+	/// Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do rejestracji dane.
+	/// </summary>
+	private static void RegisterNewUser()
 	{
 		string name, surname, email, phoneNumber, password, registerWithGoogle;
 		var passwordBuilder = new StringBuilder();
 
 		Console.WriteLine("Register with Google? [y/n]: ");
 		registerWithGoogle = Console.ReadLine();
+		
+		Console.WriteLine("Type in your email: ");
+		email = Console.ReadLine();
+
+		Console.WriteLine("Choose a password: ");
+		while (true)
+		{
+			var key = Console.ReadKey(true);
+			if (key.Key == ConsoleKey.Enter)
+			{
+				break;
+			}
+			passwordBuilder.Append(key.KeyChar);
+		}
+		password = passwordBuilder.ToString();
+		Console.WriteLine();
 
 		if (registerWithGoogle.ToLower() == "y")
 		{
-			Console.WriteLine("Type in your email: ");
-			email = Console.ReadLine();
-
-			Console.WriteLine("Choose a password: ");
-			while (true)
-			{
-				var key = Console.ReadKey(true);
-				if (key.Key == ConsoleKey.Enter)
-				{
-					break;
-				}
-				passwordBuilder.Append(key.KeyChar);
-			}
-			password = passwordBuilder.ToString();
-
 			try
 			{
 				var account = Account.RegisterWithGoogleAccount(email, password);
+				
 				_currentAccount = account;
 				Console.WriteLine("Account created successfully!");
 			}
@@ -151,21 +170,6 @@ public class Program
 		}
 		else
 		{
-			Console.WriteLine("Type in your email: ");
-			email = Console.ReadLine();
-
-			Console.WriteLine("Choose a password: ");
-			while (true)
-			{
-				var key = Console.ReadKey(true);
-				if (key.Key == ConsoleKey.Enter)
-				{
-					break;
-				}
-				passwordBuilder.Append(key.KeyChar);
-			}
-			password = passwordBuilder.ToString();
-
 			Console.WriteLine("What is your name?");
 			name = Console.ReadLine();
 
@@ -189,7 +193,11 @@ public class Program
 		}
 	}
 
-	public static void LoginUser()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby zalogowania użytkownika.
+	/// Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do logowania dane.
+	/// </summary>
+	private static void LoginUser()
 	{
 		string email, password;
 		var passwordBuilder = new StringBuilder();
@@ -206,8 +214,10 @@ public class Program
 				break;
 			}
 			passwordBuilder.Append(key.KeyChar);
+			Console.Write("*");
 		}
 		password = passwordBuilder.ToString();
+		Console.WriteLine();
 
 		try
 		{
@@ -221,9 +231,13 @@ public class Program
 		}
 	}
 
-	public static void CreateUserProfile()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby stworzenia nowego profilu użytkownika.
+	/// Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do utworzenia profilu dane.
+	/// </summary>
+	private static void CreateUserProfile()
 	{
-		if (!IsLoggedIn)
+		if (!_isLoggedIn)
 		{
 			Console.WriteLine("Log in first!");
 		}
@@ -240,7 +254,7 @@ public class Program
 			Console.WriteLine("What is your foot size?");
 			footSize = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-			Console.WriteLine("Type in your payment method (1 - credit card, else - paypal): ");
+			Console.WriteLine("Type in your payment method (1 - Credit Card, else - PayPal): ");
 			paymentChoice = Console.ReadLine();
 			if (paymentChoice == "1")
 			{
@@ -256,66 +270,75 @@ public class Program
 		}
 	}
 
-	public static void SelectUserProfile()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby wyboru profilu użytkownika.
+	/// Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne dane.
+	/// </summary>
+	private static void SelectUserProfile()
 	{
-		if (!IsLoggedIn)
+		if (!_isLoggedIn)
 		{
 			Console.WriteLine("Log in first!");
 		}
 		else
 		{
-			if(_currentAccount.UserProfiles.Count == 0)
+			if (_currentAccount.UserProfiles.Count == 0)
 			{
 				Console.WriteLine("There are no user profiles on this account. Create one first!");
 				return;
 			}
 
 			string selectedName;
-			UserProfile selectedProfile;
 
 			Console.WriteLine("Available user profiles on this account:");
 
-			foreach(UserProfile profile in _currentAccount.UserProfiles)
+			foreach (UserProfile profile in _currentAccount.UserProfiles)
 			{
 				Console.WriteLine($"- {profile.Name}");
 			}
 
 			selectedName = Console.ReadLine();
-			selectedProfile = _currentAccount.UserProfiles.FirstOrDefault(x => x.Name == selectedName);
 
-			if(selectedProfile == null)
+			try
 			{
-				Console.WriteLine("There is no profile with this name!");
+				_currentAccount.SelectUserProfile(selectedName);
 			}
-			else
+			catch (Exception ex)
 			{
-				_currentAccount.SelectedProfile = selectedProfile;
+				Console.WriteLine(ex.Message);
 			}
 		}
 	}
 
-	public static void DisplayAllSheds()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby wyświetlenia na ekranie listy dostępnych wiat.
+	/// </summary>
+	private static void DisplayAllSheds()
 	{
-		if(!(IsLoggedIn && IsUserProfileSelected))
+		if (!(_isLoggedIn && _isUserProfileSelected))
 		{
 			Console.WriteLine("Log in AND select user profile first!");
 			return;
 		}
-		
+
 		foreach (var shed in Database.Sheds)
 		{
 			Console.WriteLine(shed.ToString());
 		}
 	}
 
-	public static void LendSkates()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby rozpoczęcia wypożyczenia wrotek przez użytkownika.
+	/// Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do wypożyczenia dane.
+	/// </summary>
+	private static void LendSkates()
 	{
-		if(!(IsLoggedIn && IsUserProfileSelected))
+		if (!(_isLoggedIn && _isUserProfileSelected))
 		{
 			Console.WriteLine("Log in AND select user profile first!");
 			return;
 		}
-		
+
 		int shedId;
 		string selectedSkatesModelName;
 
@@ -343,6 +366,8 @@ public class Program
 			newRide.StartTime = DateTime.Now;
 			_currentAccount.SelectedProfile.Ride = newRide;
 
+			shed.OpenLocker();
+			shed.LockLocker();
 		}
 		else
 		{
@@ -350,17 +375,21 @@ public class Program
 		}
 	}
 
-	public static void FinishRide()
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby oddania przez użytkownika wypożyczonych wrotek.
+	/// Wyświetla na ekranie konsoli stosowne informacje, w tym koszt przejazdu.
+	/// </summary>
+	private static void FinishRide()
 	{
-		if(!(IsLoggedIn && IsUserProfileSelected))
+		if (!(_isLoggedIn && _isUserProfileSelected))
 		{
 			Console.WriteLine("Log in AND select user profile first!");
 			return;
-			
+
 		}
-		if(_currentAccount.SelectedProfile.Ride == null)
+		if (_currentAccount.SelectedProfile.Ride == null)
 		{
-			Console.WriteLine("This profile isn't lending skates!");
+			Console.WriteLine("This profile isn't currently lending skates!");
 			return;
 		}
 
@@ -369,5 +398,22 @@ public class Program
 		_currentAccount.SelectedProfile.Ride.Skates.IsLent = false;
 		_currentAccount.SelectedProfile.Ride = null;
 	}
-	
+
+	/// <summary>
+	/// Funkcja wywoływana w przypadku próby przełączenia trybu turbo w wypożyczonych wrotkach.
+	/// Jeżeli tryb turbo jest włączony, zostanie on wyłączony; jeżeli nie, wówczas zostanie on włączony.
+	/// </summary>
+	private static void SwitchTurbo()
+	{
+		if (_currentAccount.SelectedProfile.Ride == null)
+		{
+			Console.WriteLine("This profile isn't currently lending skates!");
+			return;
+		}
+		
+		var ride = _currentAccount.SelectedProfile.Ride;
+		ride.Skates.Turbo();
+
+		Console.WriteLine($"Turbo mode is now {(ride.Skates.IsTurboActive ? "ON" : "OFF")}");
+	}
 }

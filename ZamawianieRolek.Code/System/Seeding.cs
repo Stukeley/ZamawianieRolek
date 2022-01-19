@@ -1,7 +1,13 @@
-﻿namespace ZamawianieRolek.Code;
+﻿namespace ZamawianieRolek.Code.System;
 
+/// <summary>
+/// Statyczna klasa wykorzystywana na potrzeby seedowania bazy danych przy pierwszym uruchomieniu aplikacji.
+/// </summary>
 public static class Seeding
 {
+	/// <summary>
+	/// Funkcja seedująca listę Sheds bazy danych, przy pierwszym uruchomieniu aplikacji, za pomocą przykładowych danych wiat i wypożyczalnych wrotek.
+	/// </summary>
 	public static void SeedData()
 	{
 		if (Database.Sheds.Count != 0)
@@ -36,8 +42,8 @@ public static class Seeding
 			new Skates("C", new byte[100], 39, false)
 		};
 
-		Database.Sheds.Add(shed1);
-		Database.Sheds.Add(shed2);
-		Database.Sheds.Add(shed3);
+		Database.AddShedToDatabase(shed1);
+		Database.AddShedToDatabase(shed2);
+		Database.AddShedToDatabase(shed3);
 	}
 }
