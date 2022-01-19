@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using ZamawianieRolek.Code;
 
 public class Program
@@ -13,14 +14,6 @@ public class Program
 		}
 	}
 
-	private static bool IsAdmin
-	{
-		get
-		{
-			return _currentAccount is AdminAccount;
-		}
-	}
-
 	private static bool IsUserProfileSelected
 	{
 		get
@@ -32,6 +25,7 @@ public class Program
 	public static void Main()
 	{
 		Serialization.DeserializeDatabase();
+		Seeding.SeedData();
 		bool isRepeated = true;
 
 		while (isRepeated)
@@ -39,7 +33,7 @@ public class Program
 			Console.WriteLine("=========================================");
 			if (IsLoggedIn)
 			{
-				Console.WriteLine($"ACCOUNT: {_currentAccount.Name}");
+				Console.WriteLine($"ACCOUNT: {_currentAccount.Name} {_currentAccount.Surname}");
 				if (IsUserProfileSelected)
 				{
 					Console.WriteLine($"USER PROFILE: {_currentAccount.SelectedProfile.Name}");
@@ -69,22 +63,12 @@ public class Program
 				Console.WriteLine("=========================================");
 			}
 
-			if (IsAdmin)
-			{
-				Console.WriteLine("8  - Edit account");
-				Console.WriteLine("9  - Delete account");
-				Console.WriteLine("10 - Add new shed");
-				Console.WriteLine("11 - Add new skates");
-				Console.WriteLine("12 - Modify skates");
-				Console.WriteLine("=========================================");
-			}
-
 			Console.WriteLine("X - Exit application");
 
 
 			string chosenOption = Console.ReadLine();
 
-			switch (chosenOption)
+			switch (chosenOption.ToLower())
 			{
 				case "1":
 					RegisterNewUser();
@@ -107,27 +91,14 @@ public class Program
 					break;
 
 				case "6":
+					LendSkates();
 					break;
 
 				case "7":
+					FinishRide();
 					break;
 
-				case "8":
-					break;
-
-				case "9":
-					break;
-
-				case "10":
-					break;
-
-				case "11":
-					break;
-
-				case "12":
-					break;
-
-				case "X":
+				case "x":
 					isRepeated = false;
 					break;
 
@@ -135,6 +106,7 @@ public class Program
 					break;
 			}
 
+			Console.WriteLine("Press any key to continue.");
 			Console.ReadKey();
 		}
 
@@ -143,7 +115,7 @@ public class Program
 
 	public static void RegisterNewUser()
 	{
-		string name, surname, email, phoneNumber, password, isAdmin, registerWithGoogle;
+		string name, surname, email, phoneNumber, password, registerWithGoogle;
 		var passwordBuilder = new StringBuilder();
 
 		Console.WriteLine("Register with Google? [y/n]: ");
@@ -205,19 +177,7 @@ public class Program
 
 			try
 			{
-				Console.WriteLine("ADMIN? [y/n]: ");
-				isAdmin = Console.ReadLine();
-
-				Account account;
-
-				if (isAdmin == "y" || isAdmin == "Y")
-				{
-					account = AdminAccount.RegisterAdminAccount(email, name, surname, password, phoneNumber);
-				}
-				else
-				{
-					account = Account.RegisterWithUserData(email, name, surname, password, phoneNumber);
-				}
+				var account = Account.RegisterWithUserData(email, name, surname, password, phoneNumber);
 
 				_currentAccount = account;
 				Console.WriteLine("Account created successfully!");
@@ -278,7 +238,7 @@ public class Program
 			name = Console.ReadLine();
 
 			Console.WriteLine("What is your foot size?");
-			footSize = float.Parse((Console.ReadLine()));
+			footSize = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 			Console.WriteLine("Type in your payment method (1 - credit card, else - paypal): ");
 			paymentChoice = Console.ReadLine();
@@ -336,10 +296,78 @@ public class Program
 
 	public static void DisplayAllSheds()
 	{
+		if(!(IsLoggedIn && IsUserProfileSelected))
+		{
+			Console.WriteLine("Log in AND select user profile first!");
+			return;
+		}
+		
 		foreach (var shed in Database.Sheds)
 		{
 			Console.WriteLine(shed.ToString());
 		}
+	}
+
+	public static void LendSkates()
+	{
+		if(!(IsLoggedIn && IsUserProfileSelected))
+		{
+			Console.WriteLine("Log in AND select user profile first!");
+			return;
+		}
+		
+		int shedId;
+		string selectedSkatesModelName;
+
+		Console.WriteLine("Choose shed Id: ");
+
+		shedId = int.Parse(Console.ReadLine());
+
+		var shed = Database.Sheds.FirstOrDefault(x => x.Id == shedId);
+
+		if (shed != null)
+		{
+			Console.WriteLine("Choose skates model name from the list:");
+
+			foreach (var skts in shed.AvailableSkates)
+			{
+				Console.WriteLine(skts.ToString());
+			}
+
+			selectedSkatesModelName = Console.ReadLine();
+			var skates = shed.AvailableSkates.FirstOrDefault(x => x.ModelName == selectedSkatesModelName);
+
+			var newRide = new Ride();
+			newRide.Skates = skates;
+			newRide.Skates.IsLent = true;
+			newRide.StartTime = DateTime.Now;
+			_currentAccount.SelectedProfile.Ride = newRide;
+
+		}
+		else
+		{
+			Console.WriteLine("Shed of this Id does not exist.");
+		}
+	}
+
+	public static void FinishRide()
+	{
+		if(!(IsLoggedIn && IsUserProfileSelected))
+		{
+			Console.WriteLine("Log in AND select user profile first!");
+			return;
+			
+		}
+		if(_currentAccount.SelectedProfile.Ride == null)
+		{
+			Console.WriteLine("This profile isn't lending skates!");
+			return;
+		}
+
+		_currentAccount.SelectedProfile.Ride.FinishTime = DateTime.Now;
+		Console.WriteLine($"Ride price: {_currentAccount.SelectedProfile.Ride.EvaluatePrice()}");
+		_currentAccount.SelectedProfile.Ride.Skates.IsLent = false;
+		_currentAccount.SelectedProfile.Ride = null;
 	}
 	
 }

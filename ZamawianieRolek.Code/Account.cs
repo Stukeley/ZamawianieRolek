@@ -42,7 +42,7 @@
 
 		public static Account RegisterWithUserData(string email, string name, string surname, string password, string phoneNumber)
 		{
-			var account = new Account(email, name, surname, password, phoneNumber);
+			var account = new Account(email, name, surname, phoneNumber, password);
 
 			Database.AddAccountToDatabase(account);
 

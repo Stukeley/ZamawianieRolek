@@ -5,6 +5,7 @@
 		public string Name { get; set; }
 		public float FootSize { get; set; }
 		public PaymentMethod PaymentMethod{ get; set; }
+		public Ride Ride{ get; set; }
 
 		public UserProfile(string name, float footSize, PaymentMethod paymentMethod)
 		{

@@ -22,5 +22,10 @@
 		{
 			IsTurboActive = mode;
 		}
+
+		public override string ToString()
+		{
+			return $"{ModelName} - size: {Size}, battery: {BatteryPercentage}.";
+		}
 	}
 }

@@ -23,11 +23,25 @@ namespace ZamawianieRolek.Code
 
 		public static void DeserializeDatabase()
 		{
-			string accountJson = File.ReadAllText(AccountDataFileName);
-			Database.Accounts = JsonSerializer.Deserialize<List<Account>>(accountJson);
+			if (File.Exists(AccountDataFileName))
+			{
+				string accountJson = File.ReadAllText(AccountDataFileName);
+				Database.Accounts = JsonSerializer.Deserialize<List<Account>>(accountJson);
+			}
+			else
+			{
+				Database.Accounts = new List<Account>();
+			}
 
-			string shedJson = File.ReadAllText(ShedDataFileName);
-			Database.Sheds = JsonSerializer.Deserialize<List<Shed>>(shedJson);
+			if (File.Exists(ShedDataFileName))
+			{
+				string shedJson = File.ReadAllText(ShedDataFileName);
+				Database.Sheds = JsonSerializer.Deserialize<List<Shed>>(shedJson);
+			}
+			else
+			{
+				Database.Sheds = new List<Shed>();
+			}
 		}
 	}
 }

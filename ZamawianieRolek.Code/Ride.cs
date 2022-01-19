@@ -2,6 +2,7 @@
 {
 	public class Ride
 	{
+		public Skates Skates{ get; set; }
 		public DateTime StartTime { get; set; }
 		public DateTime FinishTime { get; set; }
 		public int TurboTime { get; set; }
