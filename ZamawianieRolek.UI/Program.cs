@@ -150,6 +150,7 @@ public static class Program
 				break;
 			}
 			passwordBuilder.Append(key.KeyChar);
+			Console.Write("*");
 		}
 		password = passwordBuilder.ToString();
 		Console.WriteLine();
@@ -296,6 +297,8 @@ public static class Program
 			{
 				Console.WriteLine($"- {profile.Name}");
 			}
+			
+			Console.WriteLine("Type in the name of a profile you want to choose.");
 
 			selectedName = Console.ReadLine();
 

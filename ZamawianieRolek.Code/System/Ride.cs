@@ -43,9 +43,10 @@ public class Ride
 	public float EvaluatePrice()
 	{
 		const float PricePerMinuteRatio = 0.10f;
+		const float BasePrice = 5f;
 		
 		int time = EvaluateTime();
-		RidePrice = time * PricePerMinuteRatio;
+		RidePrice = time * PricePerMinuteRatio + BasePrice;
 
 		return RidePrice;
 	}
