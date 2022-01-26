@@ -200,7 +200,7 @@ public class Account
 	/// <returns>True, jeżeli email jest poprawny - zawiera znak '@'. W przeciwnym wypadku false.</returns>
 	private static bool VerifyEmail(string email)
 	{
-		return email.Contains('@');
+		return email.Length > 0 && email.Contains('@');
 	}
 
 	/// <summary>
@@ -213,11 +213,21 @@ public class Account
 		return phoneNumber.Length == 9 && phoneNumber.All(char.IsDigit);
 	}
 
+	/// <summary>
+	/// Funkcja sprawdzająca, czy podane hasło jest poprawne (ma długość większą od 0).
+	/// </summary>
+	/// <param name="password">Podane przy rejestracji przez użytkownika hasło.</param>
+	/// <returns>True, jeżeli hasło jest poprawne - ma długość większą od 0. W przeciwnym wypadku false.</returns>
 	private static bool VerifyPassword(string password)
 	{
 		return password.Length > 0;
 	}
 
+	/// <summary>
+	/// Funkcja sprawdzająca, czy podane imię lub nazwisko jest poprawne (ma długość większą od 0 i nie zawiera cyfr).
+	/// </summary>
+	/// <param name="name">Podane przy rejestracji przez użytkownika imię lub nazwisko.</param>
+	/// <returns>True, jeżeli nazwa jest poprawna - ma długość większą od 0 i nie zawiera cyfr. W przeciwnym wypadku false.</returns>
 	private static bool VerifyName(string name)
 	{
 		return name.Length > 0 && !name.All(char.IsDigit);

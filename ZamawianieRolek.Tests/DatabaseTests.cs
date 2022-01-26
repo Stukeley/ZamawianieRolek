@@ -6,14 +6,24 @@ using NUnit.Framework;
 using ZamawianieRolek.Code.System;
 using ZamawianieRolek.Code.User;
 
+/// <summary>
+/// Klasa zawierająca testy związane z klasą Database - bazą danych, przechowującą informacje o kontach użytkowników i wiatach.
+/// </summary>
+[TestFixture]
 public class DatabaseTests
 {
+	/// <summary>
+	/// Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem.
+	/// </summary>
 	[SetUp]
 	public void Setup()
 	{
 		Seeding.SeedData();
 	}
 
+	/// <summary>
+	/// Test sprawdzający, czy po rejestracji konta znajduje się ono w bazie danych.
+	/// </summary>
 	[Test]
 	public void AccountExistsAfterRegistration()
 	{
@@ -25,6 +35,9 @@ public class DatabaseTests
 		Assert.AreEqual(account, accountFromDatabase);
 	}
 
+	/// <summary>
+	/// Test sprawdzający, czy po dodaniu nowej wiaty do bazy danych jest ona zapisana.
+	/// </summary>
 	[Test]
 	public void ShedExistsAfterAdd()
 	{
@@ -37,6 +50,9 @@ public class DatabaseTests
 		Assert.AreEqual(shed, shedFromDatabase);
 	}
 
+	/// <summary>
+	/// Test sprawdzający, czy funkcja odpowiedzialna za dodanie obiektu do bazy danych wyrzuca wyjątek w przypadku danych wejściowych będących null.
+	/// </summary>
 	[Test]
 	public void ThrowsForNullParameter()
 	{

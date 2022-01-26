@@ -9,6 +9,7 @@ public static class Seeding
 {
 	/// <summary>
 	/// Funkcja seedująca listę Sheds bazy danych, przy pierwszym uruchomieniu aplikacji, za pomocą przykładowych danych wiat i wypożyczalnych wrotek.
+	/// Funkcja inicjalizuje listy.
 	/// </summary>
 	public static void SeedData()
 	{

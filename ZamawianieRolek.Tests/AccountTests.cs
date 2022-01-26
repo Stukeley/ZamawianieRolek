@@ -5,15 +5,24 @@ using ZamawianieRolek.Code.User;
 
 namespace ZamawianieRolek.Tests;
 
+/// <summary>
+/// Klasa zawierająca testy związane z klasą Account - rejestracją i logowaniem użytkownika.
+/// </summary>
 [TestFixture]
 public class AccountTests
 {
+	/// <summary>
+	/// Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem.
+	/// </summary>
 	[SetUp]
 	public void Setup()
 	{
 		Seeding.SeedData();
 	}
 
+	/// <summary>
+	/// Test parametryzowany sprawdzający, czy rejestracja (za pomocą danych użytkownika) działa poprawnie dla poprawnych danych.
+	/// </summary>
 	[Test]
 	[TestCase("asdf@g.c", "A", "A", "A", "123456789")]
 	[TestCase("b@g.c", "B", "B", "B", "987654321")]
@@ -32,6 +41,9 @@ public class AccountTests
 		}
 	}
 
+	/// <summary>
+	/// Test parametryzowany sprawdzający, czy rejestracja (za pomocą konta Google) działa poprawnie dla poprawnych danych.
+	/// </summary>
 	[Test]
 	[TestCase("asdf@g.c", "password")]
 	[TestCase("b@g.c", "B")]
@@ -50,6 +62,9 @@ public class AccountTests
 		}
 	}
 	
+	/// <summary>
+	/// Test parametryzowany sprawdzający, czy rejestracja wyrzuca wyjątek dla niepoprawnych danych wejściowych.
+	/// </summary>
 	[Test]
 	[TestCase("asdf@g.c", "6", "A", "A", "123456789")]
 	[TestCase("b@g.c", "B", "4", "B", "987654321")]
@@ -70,6 +85,9 @@ public class AccountTests
 		}
 	}
 
+	/// <summary>
+	/// Test sprawdzający, czy rejestracja wyrzuca wyjątek dla danych wejściowych będących null.
+	/// </summary>
 	[Test]
 	public void TestRegister_ThrowsForNullInput()
 	{
@@ -84,6 +102,9 @@ public class AccountTests
 		}
 	}
 
+	/// <summary>
+	/// Test parametryzowany sprawdzający, czy logowanie wyrzuca wyjątek w przypadku, gdy występuje próba zalogowania się na nieistniejące konto.
+	/// </summary>
 	[Test]
 	[TestCase("email@e.m", "passw")]
 	[TestCase("police@g.c", "random")]
