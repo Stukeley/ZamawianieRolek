@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_ride" xml:lang="pl">
+<title>Dokumentacja klasy Ride</title>
+<indexterm><primary>Ride</primary></indexterm>
+<para>
+
+<para>Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_ride_1a72ca790b63cb4438eaaa2adac5c1c69a">EvaluatePrice</link> ()</para>
+
+<para>Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny. Funkcja ustawia wartość pola RidePrice. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_ride_1ab45cce9ee05d31d87452af50eb0fe2d0">EvaluateTime</link> ()</para>
+
+<para>Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Właściwości    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_ride_1a01adcd334a94609e6d052c7c26089f22"/><link linkend="_class_skates">Skates</link> <emphasis role="strong">Skates</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Wrotki, które są wykorzystywane przez użytkownika do przejazdu. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_1a373b014dfa655fe9d4258ec040fe69ae"/>DateTime <emphasis role="strong">StartTime</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Data początkowa przejazdu. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_1ab6ad21eb918a921206ff96d53a9d7552"/>DateTime <emphasis role="strong">FinishTime</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Data końcowa przejazdu. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_1ae7385b6828c208354d644eee50b715f0"/>int <emphasis role="strong">TurboTime</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Łączny czas spędzony przez użytkownika w trybie turbo. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_1a4024f4822b8989d09b0aaa2b13b13e4d"/>int <emphasis role="strong">Distance</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Łączny dystans przejechany przez użytkownika w ramach jednego przejazdu. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_1ae0118a214359126480aed70ec2021c04"/>float <emphasis role="strong">RidePrice</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Cena przejazdu. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika. </para>
+</section>
+<section>
+<title>Dokumentacja funkcji składowych</title>
+<anchor xml:id="_class_ride_1a72ca790b63cb4438eaaa2adac5c1c69a"/><section>
+    <title>EvaluatePrice()</title>
+<indexterm><primary>EvaluatePrice</primary><secondary>Ride</secondary></indexterm>
+<indexterm><primary>Ride</primary><secondary>EvaluatePrice</secondary></indexterm>
+<para><computeroutput>float Ride.EvaluatePrice ( )</computeroutput></para><para>
+
+<para>Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny. Funkcja ustawia wartość pola RidePrice. </para>
+</para>
+
+<para><formalpara><title>Zwraca</title>
+
+<para>Obliczona cena przejazdu.</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_ride_1ab45cce9ee05d31d87452af50eb0fe2d0"/><section>
+    <title>EvaluateTime()</title>
+<indexterm><primary>EvaluateTime</primary><secondary>Ride</secondary></indexterm>
+<indexterm><primary>Ride</primary><secondary>EvaluateTime</secondary></indexterm>
+<para><computeroutput>int Ride.EvaluateTime ( )</computeroutput></para><para>
+
+<para>Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach. </para>
+</para>
+
+<para><formalpara><title>Zwraca</title>
+
+<para>Czas przejazdu w minutach, bez uwzględnienia części ułamkowej.</para>
+</formalpara>
+</para>
+</section>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Code/System/Ride.cs</section>
+</section>

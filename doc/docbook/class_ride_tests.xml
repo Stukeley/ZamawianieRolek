@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_ride_tests" xml:lang="pl">
+<title>Dokumentacja klasy RideTests</title>
+<indexterm><primary>RideTests</primary></indexterm>
+<para>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_ride">Ride</link> - przejazdem, obliczaniem ceny i długości przejazdu, oraz trybem Turbo. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_ride_tests_1aed7f2edf6c4ba8deaabb7401ef14ba0d"/>void <emphasis role="strong">Setup</emphasis> ()</para>
+
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem, oraz inicjalizująca obiekt <link linkend="_class_account">Account</link>, wykorzystywany przez testy. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_tests_1adfff7f7c702ba3305402634c3d0bf94c"/>void <emphasis role="strong">EvaluatesPriceCorrectly</emphasis> ()</para>
+
+<para>Test sprawdzający, czy cena za przejazd wrotkami jest obliczana poprawnie. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_tests_1adbb4c11e8284e280d528c64ff3a293fa"/>void <emphasis role="strong">EvaluatesTimeCorrectly</emphasis> ()</para>
+
+<para>Test sprawdzający, czy czas przejazdu wrotkami (w minutach) jest obliczany poprawnie. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_ride_tests_1a676222c260e994eb2d1ced33360bc0f8"/>void <emphasis role="strong">TurboModeSwitchesCorrectly</emphasis> ()</para>
+
+<para>Test sprawdzający, czy przełączanie trybu Turbo we wrotkach działa poprawnie. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_ride">Ride</link> - przejazdem, obliczaniem ceny i długości przejazdu, oraz trybem Turbo. </para>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Tests/RideTests.cs</section>
+</section>

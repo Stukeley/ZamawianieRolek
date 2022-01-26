@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['distance_0',['Distance',['../class_ride.html#a4024f4822b8989d09b0aaa2b13b13e4d',1,'Ride']]]
+  ['email_0',['Email',['../class_account.html#a8eddc4a572084f9718c603845ba4f3c4',1,'Account']]]
 ];

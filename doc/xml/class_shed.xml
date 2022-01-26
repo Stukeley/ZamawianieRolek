@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_shed" kind="class" language="C#" prot="public">
+    <compoundname>Shed</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_shed_1aa71d7338b9267baf3f885107d4389cd3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Shed.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Shed.Id</qualifiedname>
+        <briefdescription>
+<para>Id wiaty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="11" column="12" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shed_1a7587b4e01cfcac0f37ca256c8ad9fed2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Shed.TotalSkates</definition>
+        <argsstring></argsstring>
+        <name>TotalSkates</name>
+        <qualifiedname>Shed.TotalSkates</qualifiedname>
+        <briefdescription>
+<para>Łączna ilość wrotek, które znajdują się w wiacie. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="16" column="12" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shed_1a7ae42288850a39a3ccd357435a4a2baf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Shed.TakenSkates</definition>
+        <argsstring></argsstring>
+        <name>TakenSkates</name>
+        <qualifiedname>Shed.TakenSkates</qualifiedname>
+        <briefdescription>
+<para>Ilość wrotek, które zostały wypożyczone i są obecnie niedostępne. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="21" column="12" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shed_1aa3f5f1fbe465365a76bf92792cd463b7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shed.Localisation</definition>
+        <argsstring></argsstring>
+        <name>Localisation</name>
+        <qualifiedname>Shed.Localisation</qualifiedname>
+        <briefdescription>
+<para>Lokalizacja wiaty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="26" column="15" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shed_1a71a528955b1d326b084a6b6cd215f7f7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_skates" kindref="compound">Skates</ref> &gt;</type>
+        <definition>List&lt;Skates&gt; Shed.AvailableSkates</definition>
+        <argsstring></argsstring>
+        <name>AvailableSkates</name>
+        <qualifiedname>Shed.AvailableSkates</qualifiedname>
+        <briefdescription>
+<para>Lista zawierająca wszystkie dostępne do wypożyczenia w wiacie wrotki. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="31" column="13" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_shed_1a99ef7704b533e3042b8d23589adc5fda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shed.Shed</definition>
+        <argsstring>(int totalSkates, int id, string localisation)</argsstring>
+        <name>Shed</name>
+        <qualifiedname>Shed.Shed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>totalSkates</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>localisation</declname>
+        </param>
+        <briefdescription>
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>totalSkates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ilość wrotek, które znajdują się w nowopowstałej wiacie.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id nowopowstałej wiaty.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localisation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lokalizacja nowopowstałej wiaty.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="39" column="8" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_shed_1ad7fe287cdc4d47b1832bd5c3f9daf98c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Shed.OpenLocker</definition>
+        <argsstring>()</argsstring>
+        <name>OpenLocker</name>
+        <qualifiedname>Shed.OpenLocker</qualifiedname>
+        <briefdescription>
+<para>Funkcja otwierająca szafkę z wrotkami, wywoływana w momencie wypożyczenia wrotek przez użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="51" column="13" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_shed_1aea4adab23a70cd2425a8e1cc186b1be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Shed.LockLocker</definition>
+        <argsstring>()</argsstring>
+        <name>LockLocker</name>
+        <qualifiedname>Shed.LockLocker</qualifiedname>
+        <briefdescription>
+<para>Funkcja zamykająca szafkę z wrotkami, wywoływana bezpośrednio po funkcji OpenLocker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="58" column="13" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_shed_1a679bd93ae07390c31107b67966bb33d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Shed.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Shed.ToString</qualifiedname>
+        <briefdescription>
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Napis, przedstawiający wiatę, gotowy do wyświetlenia np. w oknie konsoli.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Shed.cs" line="66" column="24" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="66" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Shed.cs" line="6" column="7" bodyfile="ZamawianieRolek.Code/System/Shed.cs" bodystart="7" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_shed_1a71a528955b1d326b084a6b6cd215f7f7" prot="public" virt="non-virtual"><scope>Shed</scope><name>AvailableSkates</name></member>
+      <member refid="class_shed_1aa71d7338b9267baf3f885107d4389cd3" prot="public" virt="non-virtual"><scope>Shed</scope><name>Id</name></member>
+      <member refid="class_shed_1aa3f5f1fbe465365a76bf92792cd463b7" prot="public" virt="non-virtual"><scope>Shed</scope><name>Localisation</name></member>
+      <member refid="class_shed_1aea4adab23a70cd2425a8e1cc186b1be6" prot="public" virt="non-virtual"><scope>Shed</scope><name>LockLocker</name></member>
+      <member refid="class_shed_1ad7fe287cdc4d47b1832bd5c3f9daf98c" prot="public" virt="non-virtual"><scope>Shed</scope><name>OpenLocker</name></member>
+      <member refid="class_shed_1a99ef7704b533e3042b8d23589adc5fda" prot="public" virt="non-virtual"><scope>Shed</scope><name>Shed</name></member>
+      <member refid="class_shed_1a7ae42288850a39a3ccd357435a4a2baf" prot="public" virt="non-virtual"><scope>Shed</scope><name>TakenSkates</name></member>
+      <member refid="class_shed_1a679bd93ae07390c31107b67966bb33d8" prot="public" virt="non-virtual"><scope>Shed</scope><name>ToString</name></member>
+      <member refid="class_shed_1a7587b4e01cfcac0f37ca256c8ad9fed2" prot="public" virt="non-virtual"><scope>Shed</scope><name>TotalSkates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

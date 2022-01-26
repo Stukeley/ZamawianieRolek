@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_database" kind="class" language="C#" prot="public">
+    <compoundname>Database</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_database_1a032f060115c022c57a1dc3f0057320a7" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_account" kindref="compound">Account</ref> &gt;</type>
+        <definition>List&lt;Account&gt; Database.Accounts</definition>
+        <argsstring></argsstring>
+        <name>Accounts</name>
+        <qualifiedname>Database.Accounts</qualifiedname>
+        <briefdescription>
+<para>Lista zarejestrowanych w aplikacji kont. Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku. Podczas działania programu jest na bieżąco aktualizowana. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Database.cs" line="15" column="20" bodyfile="ZamawianieRolek.Code/System/Database.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_database_1a6ccd6db4e7ee4a4ca20d0a5209bf1ae6" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_shed" kindref="compound">Shed</ref> &gt;</type>
+        <definition>List&lt;Shed&gt; Database.Sheds</definition>
+        <argsstring></argsstring>
+        <name>Sheds</name>
+        <qualifiedname>Database.Sheds</qualifiedname>
+        <briefdescription>
+<para>Lista dostępnych w aplikacji wiat, w których można wypożyczyć wrotki. Na początku działania programu, lista jest wczytywana z pliku. Po zakończeniu działania, lista jest zapisywana do pliku. Przy pierwszym uruchomieniu programu lista jest automatycznie zapełniana przykładowymi wartościami. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Database.cs" line="22" column="20" bodyfile="ZamawianieRolek.Code/System/Database.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_database_1a76ce33324145d5a1f22f996bc663fcac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Database.AddAccountToDatabase</definition>
+        <argsstring>(Account newAccount)</argsstring>
+        <name>AddAccountToDatabase</name>
+        <qualifiedname>Database.AddAccountToDatabase</qualifiedname>
+        <param>
+          <type><ref refid="class_account" kindref="compound">Account</ref></type>
+          <declname>newAccount</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja odpowiedzialna za dodanie nowego konta do bazy danych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAccount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Konto użytkownika do dodania.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Database.cs" line="28" column="20" bodyfile="ZamawianieRolek.Code/System/Database.cs" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_1a3589bc92bf9421fde1377a067104f255" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Database.AddShedToDatabase</definition>
+        <argsstring>(Shed newShed)</argsstring>
+        <name>AddShedToDatabase</name>
+        <qualifiedname>Database.AddShedToDatabase</qualifiedname>
+        <param>
+          <type><ref refid="class_shed" kindref="compound">Shed</ref></type>
+          <declname>newShed</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja odpowiedzialna za dodanie nowej wiaty do bazy danych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newShed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wiata do dodania.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Database.cs" line="42" column="20" bodyfile="ZamawianieRolek.Code/System/Database.cs" bodystart="42" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa reprezentująca bazę danych, przechowującą informacje o użytkownikach (zarejestrowanych kontach) oraz dostępnych wiatach z wrotkami. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Database.cs" line="8" column="15" bodyfile="ZamawianieRolek.Code/System/Database.cs" bodystart="9" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_database_1a032f060115c022c57a1dc3f0057320a7" prot="public" virt="non-virtual"><scope>Database</scope><name>Accounts</name></member>
+      <member refid="class_database_1a76ce33324145d5a1f22f996bc663fcac" prot="public" virt="non-virtual"><scope>Database</scope><name>AddAccountToDatabase</name></member>
+      <member refid="class_database_1a3589bc92bf9421fde1377a067104f255" prot="public" virt="non-virtual"><scope>Database</scope><name>AddShedToDatabase</name></member>
+      <member refid="class_database_1a6ccd6db4e7ee4a4ca20d0a5209bf1ae6" prot="public" virt="non-virtual"><scope>Database</scope><name>Sheds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

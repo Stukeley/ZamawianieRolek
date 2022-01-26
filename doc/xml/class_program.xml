@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_program" kind="class" language="C#" prot="public">
+    <compoundname>Program</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_program_1aa93d521bf85bc2d063126776d0788658" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_account" kindref="compound">Account</ref></type>
+        <definition>Account Program._currentAccount</definition>
+        <argsstring></argsstring>
+        <name>_currentAccount</name>
+        <qualifiedname>Program._currentAccount</qualifiedname>
+        <briefdescription>
+<para>Obecnie aktywne konto użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="16" column="24" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_program_1a92942dce7a2ab4f4d03faf22d2b37058" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Program._isLoggedIn</definition>
+        <argsstring></argsstring>
+        <name>_isLoggedIn</name>
+        <qualifiedname>Program._isLoggedIn</qualifiedname>
+        <briefdescription>
+<para>Właściwość zwracająca wartość true, jeżeli użytkownik jest zalogowany. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="21" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_program_1a13287fa4f799681145909749f391402d" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Program._isUserProfileSelected</definition>
+        <argsstring></argsstring>
+        <name>_isUserProfileSelected</name>
+        <qualifiedname>Program._isUserProfileSelected</qualifiedname>
+        <briefdescription>
+<para>Właściwość zwracająca wartość true, jeżeli użytkownik wybrał profil. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="26" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_program_1ad22b0f776312e09174fc36a1e4bade60" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Program.Main</qualifiedname>
+        <briefdescription>
+<para>Punkt wejściowy aplikacji. Funkcja dokonuje serializacji oraz deserializacji bazy danych, oraz wyświetla użytkownikowi menu aplikacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="32" column="20" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="32" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_program_1a2409992ebd12c0fe90d7329e76d6d4fa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.RegisterNewUser</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterNewUser</name>
+        <qualifiedname>Program.RegisterNewUser</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby rejestracji użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do rejestracji dane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="133" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="133" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1ad98413308183fec5b3926f5bb0ecd2bb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.LoginUser</definition>
+        <argsstring>()</argsstring>
+        <name>LoginUser</name>
+        <qualifiedname>Program.LoginUser</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby zalogowania użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do logowania dane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="203" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="203" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1aa6fc50d60e61598a7e967a6b3fef7da0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.CreateUserProfile</definition>
+        <argsstring>()</argsstring>
+        <name>CreateUserProfile</name>
+        <qualifiedname>Program.CreateUserProfile</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby stworzenia nowego profilu użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do utworzenia profilu dane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="242" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="242" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1abd4523214f81cb8b63b4c494f2edff78" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.SelectUserProfile</definition>
+        <argsstring>()</argsstring>
+        <name>SelectUserProfile</name>
+        <qualifiedname>Program.SelectUserProfile</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby wyboru profilu użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne dane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="288" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="288" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1acad66c2e9b483860d388369f67d755c7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.DisplayAllSheds</definition>
+        <argsstring>()</argsstring>
+        <name>DisplayAllSheds</name>
+        <qualifiedname>Program.DisplayAllSheds</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby wyświetlenia na ekranie listy dostępnych wiat. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="329" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="329" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1ae6450f2f98ceb56e3e4dc6100b08ff73" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.LendSkates</definition>
+        <argsstring>()</argsstring>
+        <name>LendSkates</name>
+        <qualifiedname>Program.LendSkates</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby rozpoczęcia wypożyczenia wrotek przez użytkownika. Wyświetla na ekranie konsoli stosowne informacje oraz pobiera od użytkownika niezbędne do wypożyczenia dane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="347" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="347" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1a63f9fc65d9512ff4887662f4df9f0e53" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.FinishRide</definition>
+        <argsstring>()</argsstring>
+        <name>FinishRide</name>
+        <qualifiedname>Program.FinishRide</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby oddania przez użytkownika wypożyczonych wrotek. Wyświetla na ekranie konsoli stosowne informacje, w tym koszt przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="395" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="395" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="class_program_1ac66fd048bf16aa9d4433f6ee2645841a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.SwitchTurbo</definition>
+        <argsstring>()</argsstring>
+        <name>SwitchTurbo</name>
+        <qualifiedname>Program.SwitchTurbo</qualifiedname>
+        <briefdescription>
+<para>Funkcja wywoływana w przypadku próby przełączenia trybu turbo w wypożyczonych wrotkach. Jeżeli tryb turbo jest włączony, zostanie on wyłączony; jeżeli nie, wówczas zostanie on włączony. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.UI/Program.cs" line="419" column="21" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="419" bodyend="437"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Główna klasa interfejsu użytkownika, zawierająca funkcję Main oraz funkcje odpowiedzialne za komunikację aplikacji z użytkownikiem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.UI/Program.cs" line="11" column="15" bodyfile="ZamawianieRolek.UI/Program.cs" bodystart="12" bodyend="438"/>
+    <listofallmembers>
+      <member refid="class_program_1aa93d521bf85bc2d063126776d0788658" prot="private" virt="non-virtual"><scope>Program</scope><name>_currentAccount</name></member>
+      <member refid="class_program_1a92942dce7a2ab4f4d03faf22d2b37058" prot="private" virt="non-virtual"><scope>Program</scope><name>_isLoggedIn</name></member>
+      <member refid="class_program_1a13287fa4f799681145909749f391402d" prot="private" virt="non-virtual"><scope>Program</scope><name>_isUserProfileSelected</name></member>
+      <member refid="class_program_1aa6fc50d60e61598a7e967a6b3fef7da0" prot="private" virt="non-virtual"><scope>Program</scope><name>CreateUserProfile</name></member>
+      <member refid="class_program_1acad66c2e9b483860d388369f67d755c7" prot="private" virt="non-virtual"><scope>Program</scope><name>DisplayAllSheds</name></member>
+      <member refid="class_program_1a63f9fc65d9512ff4887662f4df9f0e53" prot="private" virt="non-virtual"><scope>Program</scope><name>FinishRide</name></member>
+      <member refid="class_program_1ae6450f2f98ceb56e3e4dc6100b08ff73" prot="private" virt="non-virtual"><scope>Program</scope><name>LendSkates</name></member>
+      <member refid="class_program_1ad98413308183fec5b3926f5bb0ecd2bb" prot="private" virt="non-virtual"><scope>Program</scope><name>LoginUser</name></member>
+      <member refid="class_program_1ad22b0f776312e09174fc36a1e4bade60" prot="public" virt="non-virtual"><scope>Program</scope><name>Main</name></member>
+      <member refid="class_program_1a2409992ebd12c0fe90d7329e76d6d4fa" prot="private" virt="non-virtual"><scope>Program</scope><name>RegisterNewUser</name></member>
+      <member refid="class_program_1abd4523214f81cb8b63b4c494f2edff78" prot="private" virt="non-virtual"><scope>Program</scope><name>SelectUserProfile</name></member>
+      <member refid="class_program_1ac66fd048bf16aa9d4433f6ee2645841a" prot="private" virt="non-virtual"><scope>Program</scope><name>SwitchTurbo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

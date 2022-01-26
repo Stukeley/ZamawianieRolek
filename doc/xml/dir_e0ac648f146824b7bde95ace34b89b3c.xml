@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="dir_e0ac648f146824b7bde95ace34b89b3c" kind="dir">
+    <compoundname>ZamawianieRolek.Tests/obj/Debug</compoundname>
+    <innerdir refid="dir_b91bcfe6cdb2302e0e36555e3b317927">ZamawianieRolek.Tests/obj/Debug/net6.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Tests/obj/Debug/"/>
+  </compounddef>
+</doxygen>

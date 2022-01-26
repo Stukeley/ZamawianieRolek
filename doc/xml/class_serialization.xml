@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_serialization" kind="class" language="C#" prot="public">
+    <compoundname>Serialization</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_serialization_1afc2036efceb42ce266224bb814407fdb" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Serialization.AccountDataFileName</definition>
+        <argsstring></argsstring>
+        <name>AccountDataFileName</name>
+        <qualifiedname>Serialization.AccountDataFileName</qualifiedname>
+        <initializer>= &quot;Accounts.json&quot;</initializer>
+        <briefdescription>
+<para>Ścieżka do pliku zawierającego zapisane konta użytkowników. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Serialization.cs" line="14" column="22" bodyfile="ZamawianieRolek.Code/System/Serialization.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_serialization_1af840af25b7e8e8a167b24f4a2284a655" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Serialization.ShedDataFileName</definition>
+        <argsstring></argsstring>
+        <name>ShedDataFileName</name>
+        <qualifiedname>Serialization.ShedDataFileName</qualifiedname>
+        <initializer>= &quot;Sheds.json&quot;</initializer>
+        <briefdescription>
+<para>Ścieżka do pliku zawierającego zapisane wiaty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Serialization.cs" line="19" column="22" bodyfile="ZamawianieRolek.Code/System/Serialization.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_serialization_1a166e0f73784d7f1fc77a6ba13bc408c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Serialization.SerializeDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>SerializeDatabase</name>
+        <qualifiedname>Serialization.SerializeDatabase</qualifiedname>
+        <briefdescription>
+<para>Funkcja serializująca dane kont użytkowników oraz wiat do plików o rozszerzeniu JSON. Funkcja ta jest wywoływana tuż przed zakończeniem działania programu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Serialization.cs" line="25" column="20" bodyfile="ZamawianieRolek.Code/System/Serialization.cs" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_serialization_1aca39290a1248b745812908a03826caf3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Serialization.DeserializeDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>DeserializeDatabase</name>
+        <qualifiedname>Serialization.DeserializeDatabase</qualifiedname>
+        <briefdescription>
+<para>Funkcja deserializująca dane kont użytkowników oraz wiat z plików o rozszerzeniu JSON (jeżeli istnieją). Funkcja ta jest wywoływana tuż po rozpoczęciu działania programu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Serialization.cs" line="38" column="20" bodyfile="ZamawianieRolek.Code/System/Serialization.cs" bodystart="38" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa odpowiedzialna za serializację i deserializację danych - zarówno dotyczących kont użytkowników, jak i dostępnych wiat. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Serialization.cs" line="9" column="15" bodyfile="ZamawianieRolek.Code/System/Serialization.cs" bodystart="10" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_serialization_1afc2036efceb42ce266224bb814407fdb" prot="private" virt="non-virtual"><scope>Serialization</scope><name>AccountDataFileName</name></member>
+      <member refid="class_serialization_1aca39290a1248b745812908a03826caf3" prot="public" virt="non-virtual"><scope>Serialization</scope><name>DeserializeDatabase</name></member>
+      <member refid="class_serialization_1a166e0f73784d7f1fc77a6ba13bc408c2" prot="public" virt="non-virtual"><scope>Serialization</scope><name>SerializeDatabase</name></member>
+      <member refid="class_serialization_1af840af25b7e8e8a167b24f4a2284a655" prot="private" virt="non-virtual"><scope>Serialization</scope><name>ShedDataFileName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

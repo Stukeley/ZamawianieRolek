@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_skates" xml:lang="pl">
+<title>Dokumentacja klasy Skates</title>
+<indexterm><primary>Skates</primary></indexterm>
+<para>
+
+<para>Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_skates_1a0231754f63ff17d2fa50a45274a7c1ff">Skates</link> (string modelName, byte[] image, float size, bool condition)</para>
+
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. Bateria jest początkowo ustawiana na wartość 1.00. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1ab6eac4299a6cbce156cf11a3d3aeef9b"/>void <emphasis role="strong">Turbo</emphasis> ()</para>
+
+<para>Funkcja przełączająca tryb turbo we wrotkach. Jeżeli turbo jest aktywne, wówczas zostanie wyłączone; jeżeli nie, zostanie włączone. </para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_skates_1a93d78c56c89ae9bc74aa4b454840db0a">ToString</link> ()</para>
+
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Właściwości    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_skates_1aac69e7eba05e3996f23ff0f0d695b324"/>string <emphasis role="strong">ModelName</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Nazwa modelu wrotek. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1aa891b9e7706e066e2f18724720be4f10"/>byte[] <emphasis role="strong">Image</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Obraz jako tablica bajtów, przedstawiający wrotki. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1ad874a83db2d8ede8052b26b1ad67d249"/>float <emphasis role="strong">Size</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Rozmiar wrotek. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1a6061ee801f5f0f58588ae6ac499287e7"/>bool <emphasis role="strong">Condition</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Stan wrotek. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1a70c68f0d926ed308eb0057ae1823b7dc"/>bool <emphasis role="strong">IsTurboActive</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Zmienna informująca, czy w danym momencie aktywny jest tryb turbo. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1a91f430ca42aef102fce8f9c61e027d62"/>float <emphasis role="strong">BatteryPercentage</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Stan baterii wrotek - liczba z przedziału od 0.00 do 1.00. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_skates_1aaf7944da2beced6bccc3c057636980ca"/>bool <emphasis role="strong">IsLent</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Zmienna informująca, czy wrotki są w danym momencie wypożyczone. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie. </para>
+</section>
+<section>
+<title>Dokumentacja konstruktora i destruktora</title>
+<anchor xml:id="_class_skates_1a0231754f63ff17d2fa50a45274a7c1ff"/><section>
+    <title>Skates()</title>
+<indexterm><primary>Skates</primary><secondary>Skates</secondary></indexterm>
+<indexterm><primary>Skates</primary><secondary>Skates</secondary></indexterm>
+<para><computeroutput>Skates.Skates (string modelName, byte[] image, float size, bool condition)</computeroutput></para><para>
+
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. Bateria jest początkowo ustawiana na wartość 1.00. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>modelName</entry><entry>
+<para>Nazwa modelu nowopowstałych wrotek.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>image</entry><entry>
+<para>Zdjęcie nowopowstałych wrotek.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>size</entry><entry>
+<para>Rozmiar nowopowstałych wrotek.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>condition</entry><entry>
+<para>Stan nowopowstałych wrotek.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Dokumentacja funkcji składowych</title>
+<anchor xml:id="_class_skates_1a93d78c56c89ae9bc74aa4b454840db0a"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Skates</secondary></indexterm>
+<indexterm><primary>Skates</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Skates.ToString ( )</computeroutput></para><para>
+
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+</para>
+
+<para><formalpara><title>Zwraca</title>
+
+<para>Napis, przedstawiający wrotki, gotowy do wyświetlenia np. w oknie konsoli.</para>
+</formalpara>
+</para>
+</section>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Code/System/Skates.cs</section>
+</section>

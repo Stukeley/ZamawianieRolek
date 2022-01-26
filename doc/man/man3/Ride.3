@@ -1,0 +1,80 @@
+.TH "Ride" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Ride \- Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "float \fBEvaluatePrice\fP ()"
+.br
+.RI "Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny\&. Funkcja ustawia wartość pola RidePrice\&. "
+.ti -1c
+.RI "int \fBEvaluateTime\fP ()"
+.br
+.RI "Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach\&. "
+.in -1c
+.SS "Właściwości"
+
+.in +1c
+.ti -1c
+.RI "\fBSkates\fP \fBSkates\fP\fC [get, set]\fP"
+.br
+.RI "Wrotki, które są wykorzystywane przez użytkownika do przejazdu\&. "
+.ti -1c
+.RI "DateTime \fBStartTime\fP\fC [get, set]\fP"
+.br
+.RI "Data początkowa przejazdu\&. "
+.ti -1c
+.RI "DateTime \fBFinishTime\fP\fC [get, set]\fP"
+.br
+.RI "Data końcowa przejazdu\&. "
+.ti -1c
+.RI "int \fBTurboTime\fP\fC [get, set]\fP"
+.br
+.RI "Łączny czas spędzony przez użytkownika w trybie turbo\&. "
+.ti -1c
+.RI "int \fBDistance\fP\fC [get, set]\fP"
+.br
+.RI "Łączny dystans przejechany przez użytkownika w ramach jednego przejazdu\&. "
+.ti -1c
+.RI "float \fBRidePrice\fP\fC [get, set]\fP"
+.br
+.RI "Cena przejazdu\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika\&. 
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "float Ride\&.EvaluatePrice ()"
+
+.PP
+Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny\&. Funkcja ustawia wartość pola RidePrice\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Obliczona cena przejazdu\&.
+.RE
+.PP
+
+.SS "int Ride\&.EvaluateTime ()"
+
+.PP
+Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Czas przejazdu w minutach, bez uwzględnienia części ułamkowej\&.
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

@@ -1,0 +1,44 @@
+.TH "AccountTests" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AccountTests \- Klasa zawierająca testy związane z klasą \fBAccount\fP - rejestracją i logowaniem użytkownika\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetup\fP ()"
+.br
+.RI "Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem\&. "
+.ti -1c
+.RI "void \fBTestRegister_WorksForValidInput\fP (string email, string name, string surname, string password, string phoneNumber)"
+.br
+.RI "Test parametryzowany sprawdzający, czy rejestracja (za pomocą danych użytkownika) działa poprawnie dla poprawnych danych\&. "
+.ti -1c
+.RI "void \fBTestRegisterGoogle_WorksForValidInput\fP (string email, string password)"
+.br
+.RI "Test parametryzowany sprawdzający, czy rejestracja (za pomocą konta Google) działa poprawnie dla poprawnych danych\&. "
+.ti -1c
+.RI "void \fBTestRegister_ThrowsForInvalidInput\fP (string email, string name, string surname, string password, string phoneNumber)"
+.br
+.RI "Test parametryzowany sprawdzający, czy rejestracja wyrzuca wyjątek dla niepoprawnych danych wejściowych\&. "
+.ti -1c
+.RI "void \fBTestRegister_ThrowsForNullInput\fP ()"
+.br
+.RI "Test sprawdzający, czy rejestracja wyrzuca wyjątek dla danych wejściowych będących null\&. "
+.ti -1c
+.RI "void \fBTestLogin_ThrowsWhenAccountNotFound\fP (string email, string password)"
+.br
+.RI "Test parametryzowany sprawdzający, czy logowanie wyrzuca wyjątek w przypadku, gdy występuje próba zalogowania się na nieistniejące konto\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa zawierająca testy związane z klasą \fBAccount\fP - rejestracją i logowaniem użytkownika\&. 
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="dir_c44ba3b5a6bc3a426177bdb16e3c575f" kind="dir">
+    <compoundname>ZamawianieRolek.Code/System</compoundname>
+    <innerfile refid="_database_8cs">Database.cs</innerfile>
+    <innerfile refid="_ride_8cs">Ride.cs</innerfile>
+    <innerfile refid="_seeding_8cs">Seeding.cs</innerfile>
+    <innerfile refid="_serialization_8cs">Serialization.cs</innerfile>
+    <innerfile refid="_shed_8cs">Shed.cs</innerfile>
+    <innerfile refid="_skates_8cs">Skates.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/"/>
+  </compounddef>
+</doxygen>

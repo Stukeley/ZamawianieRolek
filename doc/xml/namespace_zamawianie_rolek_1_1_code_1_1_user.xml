@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="namespace_zamawianie_rolek_1_1_code_1_1_user" kind="namespace" language="C#">
+    <compoundname>ZamawianieRolek::Code::User</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Database.cs" line="1" column="32"/>
+  </compounddef>
+</doxygen>

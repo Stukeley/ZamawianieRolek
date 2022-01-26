@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_account" kind="class" language="C#" prot="public">
+    <compoundname>Account</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_account_1a8eddc4a572084f9718c603845ba4f3c4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Account.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Account.Email</qualifiedname>
+        <briefdescription>
+<para>Email użytkownika, podany przy rejestracji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="13" column="15" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1ad0493ce3ac145f1a6bfb9c5cda7778bf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Account.MoneyLeft</definition>
+        <argsstring></argsstring>
+        <name>MoneyLeft</name>
+        <qualifiedname>Account.MoneyLeft</qualifiedname>
+        <briefdescription>
+<para>Ilość pieniędzy pozostałych na koncie użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="18" column="12" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1af057d0d6ca1c14efc6eccf595c344856" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Account.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Account.Name</qualifiedname>
+        <briefdescription>
+<para>Imię użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="23" column="15" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1a5608b2ba6ffd74fccbc03376061e7288" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Account.Surname</definition>
+        <argsstring></argsstring>
+        <name>Surname</name>
+        <qualifiedname>Account.Surname</qualifiedname>
+        <briefdescription>
+<para>Nazwisko użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="28" column="15" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1a6e7434203ebfa5913e61c111565070a7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Account.PhoneNumber</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumber</name>
+        <qualifiedname>Account.PhoneNumber</qualifiedname>
+        <briefdescription>
+<para>Numer telefonu użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="33" column="15" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1ab52afb1c4f7ef43b68eede609072252b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Account.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Account.Password</qualifiedname>
+        <briefdescription>
+<para>Hasło użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="38" column="15" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1a25908c1b9df9423589217df71c4be680" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_user_profile" kindref="compound">UserProfile</ref> &gt;</type>
+        <definition>List&lt;UserProfile&gt; Account.UserProfiles</definition>
+        <argsstring></argsstring>
+        <name>UserProfiles</name>
+        <qualifiedname>Account.UserProfiles</qualifiedname>
+        <briefdescription>
+<para>Lista zawierająca profile użytkownika utworzone w ramach jednego konta. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="43" column="13" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="class_account_1a902ee4e674b2104fe3526fe185a2d889" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_user_profile" kindref="compound">UserProfile</ref></type>
+        <definition>UserProfile Account.SelectedProfile</definition>
+        <argsstring></argsstring>
+        <name>SelectedProfile</name>
+        <qualifiedname>Account.SelectedProfile</qualifiedname>
+        <briefdescription>
+<para>Zmienna przechowująca obecnie aktywny profil użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="48" column="20" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_account_1a92f43c642cc5e081d627dadababd90b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Account.Account</definition>
+        <argsstring>(string email, string name, string surname, string phoneNumber, string password)</argsstring>
+        <name>Account</name>
+        <qualifiedname>Account.Account</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>surname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>phoneNumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Email nowopowstałego użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Imię nowopowstałego użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>surname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwisko nowopowstałego użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phoneNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numer telefonu nowopowstałego użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hasło nowopowstałego użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="58" column="9" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="58" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_account_1a71786445daefeae864bd3938eec3810a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_account" kindref="compound">Account</ref></type>
+        <definition>static Account Account.LoginUser</definition>
+        <argsstring>(string email, string password)</argsstring>
+        <name>LoginUser</name>
+        <qualifiedname>Account.LoginUser</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja dokonująca zalogowania użytkownika. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Email podany podczas próby logowania.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hasło podane podczas próby logowania.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Odnaleziony w bazie danych użytkownik, jeżeli zgadzają się hasła.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wyjątek rzucany gdy użytkownik o podanym adresie email nie istnieje, lub gdy podane hasło jest niewłaściwe.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="78" column="23" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="78" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1abef4b2cfa9a269db945d7cd7769ac338" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_account" kindref="compound">Account</ref></type>
+        <definition>static Account Account.RegisterWithUserData</definition>
+        <argsstring>(string email, string name, string surname, string password, string phoneNumber)</argsstring>
+        <name>RegisterWithUserData</name>
+        <qualifiedname>Account.RegisterWithUserData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>surname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>phoneNumber</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Email podany przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Imię podane przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>surname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwisko podane przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hasło podane przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phoneNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numer telefonu podany przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="104" column="23" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="104" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1af500543527b47c8a6fb5eb2ed58e4223" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_account" kindref="compound">Account</ref></type>
+        <definition>static Account Account.RegisterWithGoogleAccount</definition>
+        <argsstring>(string email, string password)</argsstring>
+        <name>RegisterWithGoogleAccount</name>
+        <qualifiedname>Account.RegisterWithGoogleAccount</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja rejestrująca nowego użytkownika za pomocą konta Google. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Email podany przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hasło podane przy rejestracji.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="145" column="23" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="145" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_account_1a3f67327534174e3279b3829f3d2168d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Account.AddUserProfile</definition>
+        <argsstring>(UserProfile userProfile)</argsstring>
+        <name>AddUserProfile</name>
+        <qualifiedname>Account.AddUserProfile</qualifiedname>
+        <param>
+          <type><ref refid="class_user_profile" kindref="compound">UserProfile</ref></type>
+          <declname>userProfile</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userProfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Profil, który należy dodać do konta.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="173" column="13" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1a08973c5daf5d2db216831698a36161d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Account.SelectUserProfile</definition>
+        <argsstring>(string profileName)</argsstring>
+        <name>SelectUserProfile</name>
+        <qualifiedname>Account.SelectUserProfile</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>profileName</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>profileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwa profilu, który ma zostać wybrany.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="184" column="13" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="184" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_account_1a6185edead4fbc890e0bcada220c03f44" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Account.VerifyEmail</definition>
+        <argsstring>(string email)</argsstring>
+        <name>VerifyEmail</name>
+        <qualifiedname>Account.VerifyEmail</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja sprawdzająca, czy podany email jest poprawny (zawiera znak &apos;@&apos;). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Podany przy rejestracji lub logowaniu przez użytkownika adres email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, jeżeli email jest poprawny - zawiera znak &apos;@&apos;. W przeciwnym wypadku false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="201" column="21" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1ac0f240dddec71766a59ffec6e9b8a29c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Account.VerifyPhoneNumber</definition>
+        <argsstring>(string phoneNumber)</argsstring>
+        <name>VerifyPhoneNumber</name>
+        <qualifiedname>Account.VerifyPhoneNumber</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>phoneNumber</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja sprawdzająca, czy podany numer telefonu jest poprawny (ma 9 znaków i nie zawiera znaków innych niż cyfry). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phoneNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Podany przy rejestracji przez użytkownika numer telefonu.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, jeżeli numer telefonu jest poprawny - ma długość równą 9 oraz zawiera tylko cyfry. W przeciwnym wypadku false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="211" column="21" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1a7832c957b405d0dd3fee67d0f0088f18" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Account.VerifyPassword</definition>
+        <argsstring>(string password)</argsstring>
+        <name>VerifyPassword</name>
+        <qualifiedname>Account.VerifyPassword</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja sprawdzająca, czy podane hasło jest poprawne (ma długość większą od 0). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Podane przy rejestracji przez użytkownika hasło.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, jeżeli hasło jest poprawne - ma długość większą od 0. W przeciwnym wypadku false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="221" column="21" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_account_1ad66648f7cb6f01c11c0ab1578eea8a56" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Account.VerifyName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>VerifyName</name>
+        <qualifiedname>Account.VerifyName</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja sprawdzająca, czy podane imię lub nazwisko jest poprawne (ma długość większą od 0 i nie zawiera cyfr). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Podane przy rejestracji przez użytkownika imię lub nazwisko.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, jeżeli nazwa jest poprawna - ma długość większą od 0 i nie zawiera cyfr. W przeciwnym wypadku false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/Account.cs" line="231" column="21" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="231" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa przedstawiająca konto użytkownika. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/User/Account.cs" line="8" column="7" bodyfile="ZamawianieRolek.Code/User/Account.cs" bodystart="9" bodyend="235"/>
+    <listofallmembers>
+      <member refid="class_account_1a92f43c642cc5e081d627dadababd90b8" prot="private" virt="non-virtual"><scope>Account</scope><name>Account</name></member>
+      <member refid="class_account_1a3f67327534174e3279b3829f3d2168d5" prot="public" virt="non-virtual"><scope>Account</scope><name>AddUserProfile</name></member>
+      <member refid="class_account_1a8eddc4a572084f9718c603845ba4f3c4" prot="public" virt="non-virtual"><scope>Account</scope><name>Email</name></member>
+      <member refid="class_account_1a71786445daefeae864bd3938eec3810a" prot="public" virt="non-virtual"><scope>Account</scope><name>LoginUser</name></member>
+      <member refid="class_account_1ad0493ce3ac145f1a6bfb9c5cda7778bf" prot="public" virt="non-virtual"><scope>Account</scope><name>MoneyLeft</name></member>
+      <member refid="class_account_1af057d0d6ca1c14efc6eccf595c344856" prot="public" virt="non-virtual"><scope>Account</scope><name>Name</name></member>
+      <member refid="class_account_1ab52afb1c4f7ef43b68eede609072252b" prot="public" virt="non-virtual"><scope>Account</scope><name>Password</name></member>
+      <member refid="class_account_1a6e7434203ebfa5913e61c111565070a7" prot="public" virt="non-virtual"><scope>Account</scope><name>PhoneNumber</name></member>
+      <member refid="class_account_1af500543527b47c8a6fb5eb2ed58e4223" prot="public" virt="non-virtual"><scope>Account</scope><name>RegisterWithGoogleAccount</name></member>
+      <member refid="class_account_1abef4b2cfa9a269db945d7cd7769ac338" prot="public" virt="non-virtual"><scope>Account</scope><name>RegisterWithUserData</name></member>
+      <member refid="class_account_1a902ee4e674b2104fe3526fe185a2d889" prot="public" virt="non-virtual"><scope>Account</scope><name>SelectedProfile</name></member>
+      <member refid="class_account_1a08973c5daf5d2db216831698a36161d3" prot="public" virt="non-virtual"><scope>Account</scope><name>SelectUserProfile</name></member>
+      <member refid="class_account_1a5608b2ba6ffd74fccbc03376061e7288" prot="public" virt="non-virtual"><scope>Account</scope><name>Surname</name></member>
+      <member refid="class_account_1a25908c1b9df9423589217df71c4be680" prot="public" virt="non-virtual"><scope>Account</scope><name>UserProfiles</name></member>
+      <member refid="class_account_1a6185edead4fbc890e0bcada220c03f44" prot="private" virt="non-virtual"><scope>Account</scope><name>VerifyEmail</name></member>
+      <member refid="class_account_1ad66648f7cb6f01c11c0ab1578eea8a56" prot="private" virt="non-virtual"><scope>Account</scope><name>VerifyName</name></member>
+      <member refid="class_account_1a7832c957b405d0dd3fee67d0f0088f18" prot="private" virt="non-virtual"><scope>Account</scope><name>VerifyPassword</name></member>
+      <member refid="class_account_1ac0f240dddec71766a59ffec6e9b8a29c" prot="private" virt="non-virtual"><scope>Account</scope><name>VerifyPhoneNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

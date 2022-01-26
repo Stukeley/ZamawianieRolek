@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_account" xml:lang="pl">
+<title>Dokumentacja klasy Account</title>
+<indexterm><primary>Account</primary></indexterm>
+<para>
+
+<para>Klasa przedstawiająca konto użytkownika. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_account_1a3f67327534174e3279b3829f3d2168d5">AddUserProfile</link> (<link linkend="_class_user_profile">UserProfile</link> userProfile)</para>
+
+<para>Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_account_1a08973c5daf5d2db216831698a36161d3">SelectUserProfile</link> (string profileName)</para>
+
+<para>Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Statyczne metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_account">Account</link> <link linkend="_class_account_1a71786445daefeae864bd3938eec3810a">LoginUser</link> (string email, string password)</para>
+
+<para>Funkcja dokonująca zalogowania użytkownika. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych. </para>
+</listitem>
+            <listitem><para>static <link linkend="_class_account">Account</link> <link linkend="_class_account_1abef4b2cfa9a269db945d7cd7769ac338">RegisterWithUserData</link> (string email, string name, string surname, string password, string phoneNumber)</para>
+
+<para>Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+</listitem>
+            <listitem><para>static <link linkend="_class_account">Account</link> <link linkend="_class_account_1af500543527b47c8a6fb5eb2ed58e4223">RegisterWithGoogleAccount</link> (string email, string password)</para>
+
+<para>Funkcja rejestrująca nowego użytkownika za pomocą konta Google. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Właściwości    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_account_1a8eddc4a572084f9718c603845ba4f3c4"/>string <emphasis role="strong">Email</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Email użytkownika, podany przy rejestracji. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1ad0493ce3ac145f1a6bfb9c5cda7778bf"/>int <emphasis role="strong">MoneyLeft</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Ilość pieniędzy pozostałych na koncie użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1af057d0d6ca1c14efc6eccf595c344856"/>string <emphasis role="strong">Name</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Imię użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1a5608b2ba6ffd74fccbc03376061e7288"/>string <emphasis role="strong">Surname</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Nazwisko użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1a6e7434203ebfa5913e61c111565070a7"/>string <emphasis role="strong">PhoneNumber</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Numer telefonu użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1ab52afb1c4f7ef43b68eede609072252b"/>string <emphasis role="strong">Password</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Hasło użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1a25908c1b9df9423589217df71c4be680"/>List&lt; <link linkend="_class_user_profile">UserProfile</link> &gt; <emphasis role="strong">UserProfiles</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Lista zawierająca profile użytkownika utworzone w ramach jednego konta. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_1a902ee4e674b2104fe3526fe185a2d889"/><link linkend="_class_user_profile">UserProfile</link> <emphasis role="strong">SelectedProfile</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Zmienna przechowująca obecnie aktywny profil użytkownika. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa przedstawiająca konto użytkownika. </para>
+</section>
+<section>
+<title>Dokumentacja funkcji składowych</title>
+<anchor xml:id="_class_account_1a3f67327534174e3279b3829f3d2168d5"/><section>
+    <title>AddUserProfile()</title>
+<indexterm><primary>AddUserProfile</primary><secondary>Account</secondary></indexterm>
+<indexterm><primary>Account</primary><secondary>AddUserProfile</secondary></indexterm>
+<para><computeroutput>void Account.AddUserProfile (<link linkend="_class_user_profile">UserProfile</link> userProfile)</computeroutput></para><para>
+
+<para>Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>userProfile</entry><entry>
+<para>Profil, który należy dodać do konta.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_account_1a71786445daefeae864bd3938eec3810a"/><section>
+    <title>LoginUser()</title>
+<indexterm><primary>LoginUser</primary><secondary>Account</secondary></indexterm>
+<indexterm><primary>Account</primary><secondary>LoginUser</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_account">Account</link> Account.LoginUser (string email, string password)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Funkcja dokonująca zalogowania użytkownika. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>email</entry><entry>
+<para>Email podany podczas próby logowania.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>password</entry><entry>
+<para>Hasło podane podczas próby logowania.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Zwraca</title>
+
+<para>Odnaleziony w bazie danych użytkownik, jeżeli zgadzają się hasła.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Wyjątki</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>Wyjątek rzucany gdy użytkownik o podanym adresie email nie istnieje, lub gdy podane hasło jest niewłaściwe.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_account_1af500543527b47c8a6fb5eb2ed58e4223"/><section>
+    <title>RegisterWithGoogleAccount()</title>
+<indexterm><primary>RegisterWithGoogleAccount</primary><secondary>Account</secondary></indexterm>
+<indexterm><primary>Account</primary><secondary>RegisterWithGoogleAccount</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_account">Account</link> Account.RegisterWithGoogleAccount (string email, string password)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Funkcja rejestrująca nowego użytkownika za pomocą konta Google. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>email</entry><entry>
+<para>Email podany przy rejestracji.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>password</entry><entry>
+<para>Hasło podane przy rejestracji.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Zwraca</title>
+
+<para></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_account_1abef4b2cfa9a269db945d7cd7769ac338"/><section>
+    <title>RegisterWithUserData()</title>
+<indexterm><primary>RegisterWithUserData</primary><secondary>Account</secondary></indexterm>
+<indexterm><primary>Account</primary><secondary>RegisterWithUserData</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_account">Account</link> Account.RegisterWithUserData (string email, string name, string surname, string password, string phoneNumber)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>email</entry><entry>
+<para>Email podany przy rejestracji.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>Imię podane przy rejestracji.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>surname</entry><entry>
+<para>Nazwisko podane przy rejestracji.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>password</entry><entry>
+<para>Hasło podane przy rejestracji.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>phoneNumber</entry><entry>
+<para>Numer telefonu podany przy rejestracji.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Zwraca</title>
+
+<para></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_account_1a08973c5daf5d2db216831698a36161d3"/><section>
+    <title>SelectUserProfile()</title>
+<indexterm><primary>SelectUserProfile</primary><secondary>Account</secondary></indexterm>
+<indexterm><primary>Account</primary><secondary>SelectUserProfile</secondary></indexterm>
+<para><computeroutput>void Account.SelectUserProfile (string profileName)</computeroutput></para><para>
+
+<para>Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>profileName</entry><entry>
+<para>Nazwa profilu, który ma zostać wybrany.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Wyjątki</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Code/User/Account.cs</section>
+</section>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['evaluateprice_0',['EvaluatePrice',['../class_ride.html#a72ca790b63cb4438eaaa2adac5c1c69a',1,'Ride']]],
-  ['evaluatetime_1',['EvaluateTime',['../class_ride.html#ab45cce9ee05d31d87452af50eb0fe2d0',1,'Ride']]]
+  ['locklocker_0',['LockLocker',['../class_shed.html#aea4adab23a70cd2425a8e1cc186b1be6',1,'Shed']]],
+  ['loginuser_1',['LoginUser',['../class_account.html#a71786445daefeae864bd3938eec3810a',1,'Account']]]
 ];

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_account_tests" xml:lang="pl">
+<title>Dokumentacja klasy AccountTests</title>
+<indexterm><primary>AccountTests</primary></indexterm>
+<para>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_account">Account</link> - rejestracją i logowaniem użytkownika. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_account_tests_1adeb45372b1fa233d3e1f703168d763f4"/>void <emphasis role="strong">Setup</emphasis> ()</para>
+
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_tests_1aa15638865e7c0bcdd7f95ca57a8fef14"/>void <emphasis role="strong">TestRegister_WorksForValidInput</emphasis> (string email, string name, string surname, string password, string phoneNumber)</para>
+
+<para>Test parametryzowany sprawdzający, czy rejestracja (za pomocą danych użytkownika) działa poprawnie dla poprawnych danych. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_tests_1a7b215c19e2c62f12329a41989b59508e"/>void <emphasis role="strong">TestRegisterGoogle_WorksForValidInput</emphasis> (string email, string password)</para>
+
+<para>Test parametryzowany sprawdzający, czy rejestracja (za pomocą konta Google) działa poprawnie dla poprawnych danych. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_tests_1aec3489ae7824473abfe080bd60136c5e"/>void <emphasis role="strong">TestRegister_ThrowsForInvalidInput</emphasis> (string email, string name, string surname, string password, string phoneNumber)</para>
+
+<para>Test parametryzowany sprawdzający, czy rejestracja wyrzuca wyjątek dla niepoprawnych danych wejściowych. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_tests_1a100e3399de3f836cb31af356435e84c6"/>void <emphasis role="strong">TestRegister_ThrowsForNullInput</emphasis> ()</para>
+
+<para>Test sprawdzający, czy rejestracja wyrzuca wyjątek dla danych wejściowych będących null. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_account_tests_1aebd6eec1ca3e1777cbc723c783228d28"/>void <emphasis role="strong">TestLogin_ThrowsWhenAccountNotFound</emphasis> (string email, string password)</para>
+
+<para>Test parametryzowany sprawdzający, czy logowanie wyrzuca wyjątek w przypadku, gdy występuje próba zalogowania się na nieistniejące konto. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_account">Account</link> - rejestracją i logowaniem użytkownika. </para>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Tests/AccountTests.cs</section>
+</section>

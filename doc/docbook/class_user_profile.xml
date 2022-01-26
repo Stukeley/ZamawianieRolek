@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_user_profile" xml:lang="pl">
+<title>Dokumentacja klasy UserProfile</title>
+<indexterm><primary>UserProfile</primary></indexterm>
+<para>
+
+<para>Klasa przedstawiająca profil użytkownika w ramach konta. </para>
+ 
+</para>
+<simplesect>
+    <title>Statyczne metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_user_profile">UserProfile</link> <link linkend="_class_user_profile_1aecc3794e0aa07732f73f6796be350a2a">CreateUser</link> (string name, float footSize, <link linkend="_class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff">PaymentMethod</link> paymentMethod)</para>
+
+<para>Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Właściwości    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_user_profile_1a04097e998e4eb5b22f8c88d041eed791"/>string <emphasis role="strong">Name</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Nazwa profilu użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_profile_1ac2c1d2e8f1cae4e9a9fb51a30dcd5c48"/>float <emphasis role="strong">FootSize</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Rozmiar stopy użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff"/>PaymentMethod <emphasis role="strong">PaymentMethod</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Metoda płatności podłączona do profilu. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_profile_1ab4eafe168f5e871abe47a6c3edc1d2ac"/><link linkend="_class_ride">Ride</link> <emphasis role="strong">Ride</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Obecnie aktywny przejazd użytkownika. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa przedstawiająca profil użytkownika w ramach konta. </para>
+</section>
+<section>
+<title>Dokumentacja funkcji składowych</title>
+<anchor xml:id="_class_user_profile_1aecc3794e0aa07732f73f6796be350a2a"/><section>
+    <title>CreateUser()</title>
+<indexterm><primary>CreateUser</primary><secondary>UserProfile</secondary></indexterm>
+<indexterm><primary>UserProfile</primary><secondary>CreateUser</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_user_profile">UserProfile</link> UserProfile.CreateUser (string name, float footSize, <link linkend="_class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff">PaymentMethod</link> paymentMethod)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>Nazwa podana przy tworzeniu profilu.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>footSize</entry><entry>
+<para>Rozmiar stopy podany przy tworzeniu profilu.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>paymentMethod</entry><entry>
+<para>Metoda płatności wybrana przy tworzeniu profilu.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Zwraca</title>
+
+<para>Utworzony profil użytkownika.</para>
+</formalpara>
+</para>
+</section>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Code/User/UserProfile.cs</section>
+</section>

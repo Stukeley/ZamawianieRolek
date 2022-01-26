@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['localisation_0',['Localisation',['../class_shed.html#aa3f5f1fbe465365a76bf92792cd463b7',1,'Shed']]]
+  ['modelname_0',['ModelName',['../class_skates.html#aac69e7eba05e3996f23ff0f0d695b324',1,'Skates']]],
+  ['moneyleft_1',['MoneyLeft',['../class_account.html#ad0493ce3ac145f1a6bfb9c5cda7778bf',1,'Account']]]
 ];

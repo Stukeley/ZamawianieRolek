@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_shed" xml:lang="pl">
+<title>Dokumentacja klasy Shed</title>
+<indexterm><primary>Shed</primary></indexterm>
+<para>
+
+<para>Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_shed_1a99ef7704b533e3042b8d23589adc5fda">Shed</link> (int totalSkates, int id, string localisation)</para>
+
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1ad7fe287cdc4d47b1832bd5c3f9daf98c"/>void <emphasis role="strong">OpenLocker</emphasis> ()</para>
+
+<para>Funkcja otwierająca szafkę z wrotkami, wywoływana w momencie wypożyczenia wrotek przez użytkownika. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1aea4adab23a70cd2425a8e1cc186b1be6"/>void <emphasis role="strong">LockLocker</emphasis> ()</para>
+
+<para>Funkcja zamykająca szafkę z wrotkami, wywoływana bezpośrednio po funkcji OpenLocker. </para>
+</listitem>
+            <listitem><para>override string <link linkend="_class_shed_1a679bd93ae07390c31107b67966bb33d8">ToString</link> ()</para>
+
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Właściwości    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_shed_1aa71d7338b9267baf3f885107d4389cd3"/>int <emphasis role="strong">Id</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Id wiaty. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1a7587b4e01cfcac0f37ca256c8ad9fed2"/>int <emphasis role="strong">TotalSkates</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Łączna ilość wrotek, które znajdują się w wiacie. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1a7ae42288850a39a3ccd357435a4a2baf"/>int <emphasis role="strong">TakenSkates</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Ilość wrotek, które zostały wypożyczone i są obecnie niedostępne. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1aa3f5f1fbe465365a76bf92792cd463b7"/>string <emphasis role="strong">Localisation</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Lokalizacja wiaty. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_shed_1a71a528955b1d326b084a6b6cd215f7f7"/>List&lt; <link linkend="_class_skates">Skates</link> &gt; <emphasis role="strong">AvailableSkates</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Lista zawierająca wszystkie dostępne do wypożyczenia w wiacie wrotki. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć. </para>
+</section>
+<section>
+<title>Dokumentacja konstruktora i destruktora</title>
+<anchor xml:id="_class_shed_1a99ef7704b533e3042b8d23589adc5fda"/><section>
+    <title>Shed()</title>
+<indexterm><primary>Shed</primary><secondary>Shed</secondary></indexterm>
+<indexterm><primary>Shed</primary><secondary>Shed</secondary></indexterm>
+<para><computeroutput>Shed.Shed (int totalSkates, int id, string localisation)</computeroutput></para><para>
+
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parametry</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>totalSkates</entry><entry>
+<para>Ilość wrotek, które znajdują się w nowopowstałej wiacie.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>id</entry><entry>
+<para>Id nowopowstałej wiaty.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>localisation</entry><entry>
+<para>Lokalizacja nowopowstałej wiaty.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Dokumentacja funkcji składowych</title>
+<anchor xml:id="_class_shed_1a679bd93ae07390c31107b67966bb33d8"/><section>
+    <title>ToString()</title>
+<indexterm><primary>ToString</primary><secondary>Shed</secondary></indexterm>
+<indexterm><primary>Shed</primary><secondary>ToString</secondary></indexterm>
+<para><computeroutput>override string Shed.ToString ( )</computeroutput></para><para>
+
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+</para>
+
+<para><formalpara><title>Zwraca</title>
+
+<para>Napis, przedstawiający wiatę, gotowy do wyświetlenia np. w oknie konsoli.</para>
+</formalpara>
+</para>
+</section>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Code/System/Shed.cs</section>
+</section>

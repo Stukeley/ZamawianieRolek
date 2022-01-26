@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_database_tests" kind="class" language="C#" prot="public">
+    <compoundname>DatabaseTests</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_database_tests_1a145da22972c0f83433ef7d8613834601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatabaseTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>DatabaseTests.Setup</qualifiedname>
+        <briefdescription>
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/DatabaseTests.cs" line="19" column="13" bodyfile="ZamawianieRolek.Tests/DatabaseTests.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_tests_1a8f2ba3db0e8f71d3551ec26bb73ce426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatabaseTests.AccountExistsAfterRegistration</definition>
+        <argsstring>()</argsstring>
+        <name>AccountExistsAfterRegistration</name>
+        <qualifiedname>DatabaseTests.AccountExistsAfterRegistration</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy po rejestracji konta znajduje się ono w bazie danych. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/DatabaseTests.cs" line="28" column="13" bodyfile="ZamawianieRolek.Tests/DatabaseTests.cs" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_tests_1ad166a90e40f6dc1c0469920c964b2d95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatabaseTests.ShedExistsAfterAdd</definition>
+        <argsstring>()</argsstring>
+        <name>ShedExistsAfterAdd</name>
+        <qualifiedname>DatabaseTests.ShedExistsAfterAdd</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy po dodaniu nowej wiaty do bazy danych jest ona zapisana. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/DatabaseTests.cs" line="42" column="13" bodyfile="ZamawianieRolek.Tests/DatabaseTests.cs" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_database_tests_1aedd9f28688378a51c8e17cde90908ab8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatabaseTests.ThrowsForNullParameter</definition>
+        <argsstring>()</argsstring>
+        <name>ThrowsForNullParameter</name>
+        <qualifiedname>DatabaseTests.ThrowsForNullParameter</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy funkcja odpowiedzialna za dodanie obiektu do bazy danych wyrzuca wyjątek w przypadku danych wejściowych będących null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/DatabaseTests.cs" line="57" column="13" bodyfile="ZamawianieRolek.Tests/DatabaseTests.cs" bodystart="57" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa zawierająca testy związane z klasą Database - bazą danych, przechowującą informacje o kontach użytkowników i wiatach. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Tests/DatabaseTests.cs" line="13" column="7" bodyfile="ZamawianieRolek.Tests/DatabaseTests.cs" bodystart="14" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_database_tests_1a8f2ba3db0e8f71d3551ec26bb73ce426" prot="public" virt="non-virtual"><scope>DatabaseTests</scope><name>AccountExistsAfterRegistration</name></member>
+      <member refid="class_database_tests_1a145da22972c0f83433ef7d8613834601" prot="public" virt="non-virtual"><scope>DatabaseTests</scope><name>Setup</name></member>
+      <member refid="class_database_tests_1ad166a90e40f6dc1c0469920c964b2d95" prot="public" virt="non-virtual"><scope>DatabaseTests</scope><name>ShedExistsAfterAdd</name></member>
+      <member refid="class_database_tests_1aedd9f28688378a51c8e17cde90908ab8" prot="public" virt="non-virtual"><scope>DatabaseTests</scope><name>ThrowsForNullParameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

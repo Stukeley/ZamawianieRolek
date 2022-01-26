@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_ride" kind="class" language="C#" prot="public">
+    <compoundname>Ride</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ride_1a01adcd334a94609e6d052c7c26089f22" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_skates" kindref="compound">Skates</ref></type>
+        <definition>Skates Ride.Skates</definition>
+        <argsstring></argsstring>
+        <name>Skates</name>
+        <qualifiedname>Ride.Skates</qualifiedname>
+        <briefdescription>
+<para>Wrotki, które są wykorzystywane przez użytkownika do przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="11" column="15" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ride_1a373b014dfa655fe9d4258ec040fe69ae" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Ride.StartTime</definition>
+        <argsstring></argsstring>
+        <name>StartTime</name>
+        <qualifiedname>Ride.StartTime</qualifiedname>
+        <briefdescription>
+<para>Data początkowa przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="16" column="17" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ride_1ab6ad21eb918a921206ff96d53a9d7552" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Ride.FinishTime</definition>
+        <argsstring></argsstring>
+        <name>FinishTime</name>
+        <qualifiedname>Ride.FinishTime</qualifiedname>
+        <briefdescription>
+<para>Data końcowa przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="21" column="17" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ride_1ae7385b6828c208354d644eee50b715f0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Ride.TurboTime</definition>
+        <argsstring></argsstring>
+        <name>TurboTime</name>
+        <qualifiedname>Ride.TurboTime</qualifiedname>
+        <briefdescription>
+<para>Łączny czas spędzony przez użytkownika w trybie turbo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="26" column="12" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ride_1a4024f4822b8989d09b0aaa2b13b13e4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Ride.Distance</definition>
+        <argsstring></argsstring>
+        <name>Distance</name>
+        <qualifiedname>Ride.Distance</qualifiedname>
+        <briefdescription>
+<para>Łączny dystans przejechany przez użytkownika w ramach jednego przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="31" column="12" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ride_1ae0118a214359126480aed70ec2021c04" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Ride.RidePrice</definition>
+        <argsstring></argsstring>
+        <name>RidePrice</name>
+        <qualifiedname>Ride.RidePrice</qualifiedname>
+        <briefdescription>
+<para>Cena przejazdu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="36" column="14" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ride_1a72ca790b63cb4438eaaa2adac5c1c69a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Ride.EvaluatePrice</definition>
+        <argsstring>()</argsstring>
+        <name>EvaluatePrice</name>
+        <qualifiedname>Ride.EvaluatePrice</qualifiedname>
+        <briefdescription>
+<para>Funkcja obliczająca koszt przejazdu na podstawie czasu jego rozpoczęcia, zakończenia oraz stałego przelicznika ceny. Funkcja ustawia wartość pola RidePrice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Obliczona cena przejazdu.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="43" column="14" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="43" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ride_1ab45cce9ee05d31d87452af50eb0fe2d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Ride.EvaluateTime</definition>
+        <argsstring>()</argsstring>
+        <name>EvaluateTime</name>
+        <qualifiedname>Ride.EvaluateTime</qualifiedname>
+        <briefdescription>
+<para>Funkcja obliczająca i zwracająca łączny czas przejazdu w minutach. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Czas przejazdu w minutach, bez uwzględnienia części ułamkowej.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Ride.cs" line="58" column="12" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Ride.cs" line="6" column="7" bodyfile="ZamawianieRolek.Code/System/Ride.cs" bodystart="7" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_ride_1a4024f4822b8989d09b0aaa2b13b13e4d" prot="public" virt="non-virtual"><scope>Ride</scope><name>Distance</name></member>
+      <member refid="class_ride_1a72ca790b63cb4438eaaa2adac5c1c69a" prot="public" virt="non-virtual"><scope>Ride</scope><name>EvaluatePrice</name></member>
+      <member refid="class_ride_1ab45cce9ee05d31d87452af50eb0fe2d0" prot="public" virt="non-virtual"><scope>Ride</scope><name>EvaluateTime</name></member>
+      <member refid="class_ride_1ab6ad21eb918a921206ff96d53a9d7552" prot="public" virt="non-virtual"><scope>Ride</scope><name>FinishTime</name></member>
+      <member refid="class_ride_1ae0118a214359126480aed70ec2021c04" prot="public" virt="non-virtual"><scope>Ride</scope><name>RidePrice</name></member>
+      <member refid="class_ride_1a01adcd334a94609e6d052c7c26089f22" prot="public" virt="non-virtual"><scope>Ride</scope><name>Skates</name></member>
+      <member refid="class_ride_1a373b014dfa655fe9d4258ec040fe69ae" prot="public" virt="non-virtual"><scope>Ride</scope><name>StartTime</name></member>
+      <member refid="class_ride_1ae7385b6828c208354d644eee50b715f0" prot="public" virt="non-virtual"><scope>Ride</scope><name>TurboTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

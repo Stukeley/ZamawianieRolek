@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_user_profile_tests" xml:lang="pl">
+<title>Dokumentacja klasy UserProfileTests</title>
+<indexterm><primary>UserProfileTests</primary></indexterm>
+<para>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_user_profile">UserProfile</link> - profilem użytkownika w ramach konta. </para>
+ 
+</para>
+<simplesect>
+    <title>Metody publiczne    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_user_profile_tests_1aa106fdf288171ea042e92b9c989cff74"/>void <emphasis role="strong">Setup</emphasis> ()</para>
+
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_profile_tests_1a6f5b27abef002c2d50ac7aead8d79956"/>void <emphasis role="strong">ProfileExistsAfterCreating</emphasis> ()</para>
+
+<para>Test sprawdzający, czy po utworzeniu profilu użytkownika jest on przypisany do konta, oraz czy jest on aktualnie wybranym profilem. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_user_profile_tests_1a605e2cd5b0d8409315b26e82b3f753fa"/>void <emphasis role="strong">ThrowsForInvalidInput</emphasis> ()</para>
+
+<para>Test sprawdzający, czy funkcja tworząca profil użytkownika wyrzuca wyjątek dla niepoprawnych danych wejściowych. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Opis szczegółowy</title>
+
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_user_profile">UserProfile</link> - profilem użytkownika w ramach konta. </para>
+<para>
+Dokumentacja dla tej klasy została wygenerowana z pliku:</para>
+ZamawianieRolek.Tests/UserProfileTests.cs</section>
+</section>

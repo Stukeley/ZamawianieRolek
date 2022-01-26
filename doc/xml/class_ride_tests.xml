@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_ride_tests" kind="class" language="C#" prot="public">
+    <compoundname>RideTests</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ride_tests_1a0016a0b196b28141eef40ad075822214" prot="private" static="no" mutable="no">
+        <type><ref refid="class_account" kindref="compound">Account</ref></type>
+        <definition>Account RideTests._account</definition>
+        <argsstring></argsstring>
+        <name>_account</name>
+        <qualifiedname>RideTests._account</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/RideTests.cs" line="16" column="17" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ride_tests_1aed7f2edf6c4ba8deaabb7401ef14ba0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RideTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>RideTests.Setup</qualifiedname>
+        <briefdescription>
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem, oraz inicjalizująca obiekt <ref refid="class_account" kindref="compound">Account</ref>, wykorzystywany przez testy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/RideTests.cs" line="22" column="13" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ride_tests_1adfff7f7c702ba3305402634c3d0bf94c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RideTests.EvaluatesPriceCorrectly</definition>
+        <argsstring>()</argsstring>
+        <name>EvaluatesPriceCorrectly</name>
+        <qualifiedname>RideTests.EvaluatesPriceCorrectly</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy cena za przejazd wrotkami jest obliczana poprawnie. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/RideTests.cs" line="33" column="13" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="33" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ride_tests_1adbb4c11e8284e280d528c64ff3a293fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RideTests.EvaluatesTimeCorrectly</definition>
+        <argsstring>()</argsstring>
+        <name>EvaluatesTimeCorrectly</name>
+        <qualifiedname>RideTests.EvaluatesTimeCorrectly</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy czas przejazdu wrotkami (w minutach) jest obliczany poprawnie. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/RideTests.cs" line="56" column="13" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="56" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ride_tests_1a676222c260e994eb2d1ced33360bc0f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RideTests.TurboModeSwitchesCorrectly</definition>
+        <argsstring>()</argsstring>
+        <name>TurboModeSwitchesCorrectly</name>
+        <qualifiedname>RideTests.TurboModeSwitchesCorrectly</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy przełączanie trybu Turbo we wrotkach działa poprawnie. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/RideTests.cs" line="79" column="13" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="79" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa zawierająca testy związane z klasą <ref refid="class_ride" kindref="compound">Ride</ref> - przejazdem, obliczaniem ceny i długości przejazdu, oraz trybem Turbo. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Tests/RideTests.cs" line="14" column="7" bodyfile="ZamawianieRolek.Tests/RideTests.cs" bodystart="15" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_ride_tests_1a0016a0b196b28141eef40ad075822214" prot="private" virt="non-virtual"><scope>RideTests</scope><name>_account</name></member>
+      <member refid="class_ride_tests_1adfff7f7c702ba3305402634c3d0bf94c" prot="public" virt="non-virtual"><scope>RideTests</scope><name>EvaluatesPriceCorrectly</name></member>
+      <member refid="class_ride_tests_1adbb4c11e8284e280d528c64ff3a293fa" prot="public" virt="non-virtual"><scope>RideTests</scope><name>EvaluatesTimeCorrectly</name></member>
+      <member refid="class_ride_tests_1aed7f2edf6c4ba8deaabb7401ef14ba0d" prot="public" virt="non-virtual"><scope>RideTests</scope><name>Setup</name></member>
+      <member refid="class_ride_tests_1a676222c260e994eb2d1ced33360bc0f8" prot="public" virt="non-virtual"><scope>RideTests</scope><name>TurboModeSwitchesCorrectly</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="pl">
+<title>Lista klas</title>
+Tutaj znajdują się klasy, struktury, unie i interfejsy wraz z ich krótkimi opisami:<link linkend="_class_account">Account</link>
+<para>Klasa przedstawiająca konto użytkownika. </para>
+<link linkend="_class_account_tests">AccountTests</link>
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_account">Account</link> - rejestracją i logowaniem użytkownika. </para>
+<link linkend="_class_database_tests">DatabaseTests</link>
+<para>Klasa zawierająca testy związane z klasą Database - bazą danych, przechowującą informacje o kontach użytkowników i wiatach. </para>
+<link linkend="_class_ride">Ride</link>
+<para>Klasa przedstawiająca przejazd, rozpoczęty i zakończony przez użytkownika. </para>
+<link linkend="_class_ride_tests">RideTests</link>
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_ride">Ride</link> - przejazdem, obliczaniem ceny i długości przejazdu, oraz trybem Turbo. </para>
+<link linkend="_class_shed">Shed</link>
+<para>Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć. </para>
+<link linkend="_class_skates">Skates</link>
+<para>Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie. </para>
+<link linkend="_class_user_profile">UserProfile</link>
+<para>Klasa przedstawiająca profil użytkownika w ramach konta. </para>
+<link linkend="_class_user_profile_tests">UserProfileTests</link>
+<para>Klasa zawierająca testy związane z klasą <link linkend="_class_user_profile">UserProfile</link> - profilem użytkownika w ramach konta. </para>
+</section>

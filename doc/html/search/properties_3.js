@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['condition_0',['Condition',['../class_skates.html#a6061ee801f5f0f58588ae6ac499287e7',1,'Skates']]]
+  ['distance_0',['Distance',['../class_ride.html#a4024f4822b8989d09b0aaa2b13b13e4d',1,'Ride']]]
 ];

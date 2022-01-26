@@ -1,0 +1,66 @@
+.TH "UserProfile" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UserProfile \- Klasa przedstawiająca profil użytkownika w ramach konta\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBUserProfile\fP \fBCreateUser\fP (string name, float footSize, \fBPaymentMethod\fP paymentMethod)"
+.br
+.RI "Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika\&. "
+.in -1c
+.SS "Właściwości"
+
+.in +1c
+.ti -1c
+.RI "string \fBName\fP\fC [get]\fP"
+.br
+.RI "Nazwa profilu użytkownika\&. "
+.ti -1c
+.RI "float \fBFootSize\fP\fC [get]\fP"
+.br
+.RI "Rozmiar stopy użytkownika\&. "
+.ti -1c
+.RI "PaymentMethod \fBPaymentMethod\fP\fC [get]\fP"
+.br
+.RI "Metoda płatności podłączona do profilu\&. "
+.ti -1c
+.RI "\fBRide\fP \fBRide\fP\fC [get, set]\fP"
+.br
+.RI "Obecnie aktywny przejazd użytkownika\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przedstawiająca profil użytkownika w ramach konta\&. 
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "static \fBUserProfile\fP UserProfile\&.CreateUser (string name, float footSize, \fBPaymentMethod\fP paymentMethod)\fC [static]\fP"
+
+.PP
+Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIname\fP Nazwa podana przy tworzeniu profilu\&.
+.br
+\fIfootSize\fP Rozmiar stopy podany przy tworzeniu profilu\&.
+.br
+\fIpaymentMethod\fP Metoda płatności wybrana przy tworzeniu profilu\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Utworzony profil użytkownika\&.
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

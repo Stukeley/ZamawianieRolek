@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_skates" kind="class" language="C#" prot="public">
+    <compoundname>Skates</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skates_1aac69e7eba05e3996f23ff0f0d695b324" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Skates.ModelName</definition>
+        <argsstring></argsstring>
+        <name>ModelName</name>
+        <qualifiedname>Skates.ModelName</qualifiedname>
+        <briefdescription>
+<para>Nazwa modelu wrotek. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="11" column="15" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1aa891b9e7706e066e2f18724720be4f10" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>byte[]</type>
+        <definition>byte [] Skates.Image</definition>
+        <argsstring></argsstring>
+        <name>Image</name>
+        <qualifiedname>Skates.Image</qualifiedname>
+        <briefdescription>
+<para>Obraz jako tablica bajtów, przedstawiający wrotki. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="16" column="13" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1ad874a83db2d8ede8052b26b1ad67d249" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float Skates.Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <qualifiedname>Skates.Size</qualifiedname>
+        <briefdescription>
+<para>Rozmiar wrotek. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="21" column="14" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1a6061ee801f5f0f58588ae6ac499287e7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Skates.Condition</definition>
+        <argsstring></argsstring>
+        <name>Condition</name>
+        <qualifiedname>Skates.Condition</qualifiedname>
+        <briefdescription>
+<para>Stan wrotek. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="26" column="13" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1a70c68f0d926ed308eb0057ae1823b7dc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Skates.IsTurboActive</definition>
+        <argsstring></argsstring>
+        <name>IsTurboActive</name>
+        <qualifiedname>Skates.IsTurboActive</qualifiedname>
+        <briefdescription>
+<para>Zmienna informująca, czy w danym momencie aktywny jest tryb turbo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="31" column="13" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1a91f430ca42aef102fce8f9c61e027d62" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Skates.BatteryPercentage</definition>
+        <argsstring></argsstring>
+        <name>BatteryPercentage</name>
+        <qualifiedname>Skates.BatteryPercentage</qualifiedname>
+        <briefdescription>
+<para>Stan baterii wrotek - liczba z przedziału od 0.00 do 1.00. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="36" column="14" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skates_1aaf7944da2beced6bccc3c057636980ca" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Skates.IsLent</definition>
+        <argsstring></argsstring>
+        <name>IsLent</name>
+        <qualifiedname>Skates.IsLent</qualifiedname>
+        <briefdescription>
+<para>Zmienna informująca, czy wrotki są w danym momencie wypożyczone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="41" column="13" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skates_1a0231754f63ff17d2fa50a45274a7c1ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Skates.Skates</definition>
+        <argsstring>(string modelName, byte[] image, float size, bool condition)</argsstring>
+        <name>Skates</name>
+        <qualifiedname>Skates.Skates</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>modelName</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+<para>Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami. Bateria jest początkowo ustawiana na wartość 1.00. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modelName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwa modelu nowopowstałych wrotek.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zdjęcie nowopowstałych wrotek.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rozmiar nowopowstałych wrotek.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stan nowopowstałych wrotek.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="51" column="8" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="51" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_skates_1ab6eac4299a6cbce156cf11a3d3aeef9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Skates.Turbo</definition>
+        <argsstring>()</argsstring>
+        <name>Turbo</name>
+        <qualifiedname>Skates.Turbo</qualifiedname>
+        <briefdescription>
+<para>Funkcja przełączająca tryb turbo we wrotkach. Jeżeli turbo jest aktywne, wówczas zostanie wyłączone; jeżeli nie, zostanie włączone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="64" column="13" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_skates_1a93d78c56c89ae9bc74aa4b454840db0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Skates.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Skates.ToString</qualifiedname>
+        <briefdescription>
+<para>Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Napis, przedstawiający wrotki, gotowy do wyświetlenia np. w oknie konsoli.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/System/Skates.cs" line="73" column="24" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="73" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/System/Skates.cs" line="6" column="7" bodyfile="ZamawianieRolek.Code/System/Skates.cs" bodystart="7" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_skates_1a91f430ca42aef102fce8f9c61e027d62" prot="public" virt="non-virtual"><scope>Skates</scope><name>BatteryPercentage</name></member>
+      <member refid="class_skates_1a6061ee801f5f0f58588ae6ac499287e7" prot="public" virt="non-virtual"><scope>Skates</scope><name>Condition</name></member>
+      <member refid="class_skates_1aa891b9e7706e066e2f18724720be4f10" prot="public" virt="non-virtual"><scope>Skates</scope><name>Image</name></member>
+      <member refid="class_skates_1aaf7944da2beced6bccc3c057636980ca" prot="public" virt="non-virtual"><scope>Skates</scope><name>IsLent</name></member>
+      <member refid="class_skates_1a70c68f0d926ed308eb0057ae1823b7dc" prot="public" virt="non-virtual"><scope>Skates</scope><name>IsTurboActive</name></member>
+      <member refid="class_skates_1aac69e7eba05e3996f23ff0f0d695b324" prot="public" virt="non-virtual"><scope>Skates</scope><name>ModelName</name></member>
+      <member refid="class_skates_1ad874a83db2d8ede8052b26b1ad67d249" prot="public" virt="non-virtual"><scope>Skates</scope><name>Size</name></member>
+      <member refid="class_skates_1a0231754f63ff17d2fa50a45274a7c1ff" prot="public" virt="non-virtual"><scope>Skates</scope><name>Skates</name></member>
+      <member refid="class_skates_1a93d78c56c89ae9bc74aa4b454840db0a" prot="public" virt="non-virtual"><scope>Skates</scope><name>ToString</name></member>
+      <member refid="class_skates_1ab6eac4299a6cbce156cf11a3d3aeef9b" prot="public" virt="non-virtual"><scope>Skates</scope><name>Turbo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

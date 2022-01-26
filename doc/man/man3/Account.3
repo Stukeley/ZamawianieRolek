@@ -1,0 +1,172 @@
+.TH "Account" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Account \- Klasa przedstawiająca konto użytkownika\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddUserProfile\fP (\fBUserProfile\fP userProfile)"
+.br
+.RI "Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil\&. "
+.ti -1c
+.RI "void \fBSelectUserProfile\fP (string profileName)"
+.br
+.RI "Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil\&. "
+.in -1c
+.SS "Statyczne metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "static \fBAccount\fP \fBLoginUser\fP (string email, string password)"
+.br
+.RI "Funkcja dokonująca zalogowania użytkownika\&. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych\&. "
+.ti -1c
+.RI "static \fBAccount\fP \fBRegisterWithUserData\fP (string email, string name, string surname, string password, string phoneNumber)"
+.br
+.RI "Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika\&. "
+.ti -1c
+.RI "static \fBAccount\fP \fBRegisterWithGoogleAccount\fP (string email, string password)"
+.br
+.RI "Funkcja rejestrująca nowego użytkownika za pomocą konta Google\&. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie\&. "
+.in -1c
+.SS "Właściwości"
+
+.in +1c
+.ti -1c
+.RI "string \fBEmail\fP\fC [get, set]\fP"
+.br
+.RI "Email użytkownika, podany przy rejestracji\&. "
+.ti -1c
+.RI "int \fBMoneyLeft\fP\fC [get, set]\fP"
+.br
+.RI "Ilość pieniędzy pozostałych na koncie użytkownika\&. "
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Imię użytkownika\&. "
+.ti -1c
+.RI "string \fBSurname\fP\fC [get, set]\fP"
+.br
+.RI "Nazwisko użytkownika\&. "
+.ti -1c
+.RI "string \fBPhoneNumber\fP\fC [get, set]\fP"
+.br
+.RI "Numer telefonu użytkownika\&. "
+.ti -1c
+.RI "string \fBPassword\fP\fC [get, set]\fP"
+.br
+.RI "Hasło użytkownika\&. "
+.ti -1c
+.RI "List< \fBUserProfile\fP > \fBUserProfiles\fP\fC [get, set]\fP"
+.br
+.RI "Lista zawierająca profile użytkownika utworzone w ramach jednego konta\&. "
+.ti -1c
+.RI "\fBUserProfile\fP \fBSelectedProfile\fP\fC [get, set]\fP"
+.br
+.RI "Zmienna przechowująca obecnie aktywny profil użytkownika\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przedstawiająca konto użytkownika\&. 
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Account\&.AddUserProfile (\fBUserProfile\fP userProfile)"
+
+.PP
+Funkcja dodająca nowy profil użytkownika do konta, oraz ustawiająca go jako obecnie wybrany profil\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIuserProfile\fP Profil, który należy dodać do konta\&.
+.RE
+.PP
+
+.SS "static \fBAccount\fP Account\&.LoginUser (string email, string password)\fC [static]\fP"
+
+.PP
+Funkcja dokonująca zalogowania użytkownika\&. Podany adres email wyszukiwany jest w bazie danych, a następnie sprawdzane jest, czy podane hasło zgadza się z hasłem zapisanym w bazie danych\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIemail\fP Email podany podczas próby logowania\&.
+.br
+\fIpassword\fP Hasło podane podczas próby logowania\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+Odnaleziony w bazie danych użytkownik, jeżeli zgadzają się hasła\&.
+.RE
+.PP
+\fBWyjątki\fP
+.RS 4
+\fIException\fP Wyjątek rzucany gdy użytkownik o podanym adresie email nie istnieje, lub gdy podane hasło jest niewłaściwe\&.
+.RE
+.PP
+
+.SS "static \fBAccount\fP Account\&.RegisterWithGoogleAccount (string email, string password)\fC [static]\fP"
+
+.PP
+Funkcja rejestrująca nowego użytkownika za pomocą konta Google\&. Użytkownik podaje jedynie adres email i hasło, pozostałe niezbędne wartości są generowane automatycznie\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIemail\fP Email podany przy rejestracji\&.
+.br
+\fIpassword\fP Hasło podane przy rejestracji\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+.RE
+.PP
+
+.SS "static \fBAccount\fP Account\&.RegisterWithUserData (string email, string name, string surname, string password, string phoneNumber)\fC [static]\fP"
+
+.PP
+Funkcja rejestrująca nowego użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIemail\fP Email podany przy rejestracji\&.
+.br
+\fIname\fP Imię podane przy rejestracji\&.
+.br
+\fIsurname\fP Nazwisko podane przy rejestracji\&.
+.br
+\fIpassword\fP Hasło podane przy rejestracji\&.
+.br
+\fIphoneNumber\fP Numer telefonu podany przy rejestracji\&.
+.RE
+.PP
+\fBZwraca\fP
+.RS 4
+.RE
+.PP
+
+.SS "void Account\&.SelectUserProfile (string profileName)"
+
+.PP
+Funkcja wybierająca profil użytkownika o podanej nazwie jako obecnie wybrany profil\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fIprofileName\fP Nazwa profilu, który ma zostać wybrany\&.
+.RE
+.PP
+\fBWyjątki\fP
+.RS 4
+\fIException\fP Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje\&.
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

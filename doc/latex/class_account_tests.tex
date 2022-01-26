@@ -1,0 +1,36 @@
+\hypertarget{class_account_tests}{}\doxysection{Dokumentacja klasy Account\+Tests}
+\label{class_account_tests}\index{AccountTests@{AccountTests}}
+
+
+Klasa zawierająca testy związane z klasą \mbox{\hyperlink{class_account}{Account}} -\/ rejestracją i logowaniem użytkownika.  
+
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_account_tests_adeb45372b1fa233d3e1f703168d763f4}\label{class_account_tests_adeb45372b1fa233d3e1f703168d763f4}} 
+void {\bfseries Setup} ()
+\begin{DoxyCompactList}\small\item\em Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_tests_aa15638865e7c0bcdd7f95ca57a8fef14}\label{class_account_tests_aa15638865e7c0bcdd7f95ca57a8fef14}} 
+void {\bfseries Test\+Register\+\_\+\+Works\+For\+Valid\+Input} (string email, string name, string surname, string password, string phone\+Number)
+\begin{DoxyCompactList}\small\item\em Test parametryzowany sprawdzający, czy rejestracja (za pomocą danych użytkownika) działa poprawnie dla poprawnych danych. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_tests_a7b215c19e2c62f12329a41989b59508e}\label{class_account_tests_a7b215c19e2c62f12329a41989b59508e}} 
+void {\bfseries Test\+Register\+Google\+\_\+\+Works\+For\+Valid\+Input} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Test parametryzowany sprawdzający, czy rejestracja (za pomocą konta Google) działa poprawnie dla poprawnych danych. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_tests_aec3489ae7824473abfe080bd60136c5e}\label{class_account_tests_aec3489ae7824473abfe080bd60136c5e}} 
+void {\bfseries Test\+Register\+\_\+\+Throws\+For\+Invalid\+Input} (string email, string name, string surname, string password, string phone\+Number)
+\begin{DoxyCompactList}\small\item\em Test parametryzowany sprawdzający, czy rejestracja wyrzuca wyjątek dla niepoprawnych danych wejściowych. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_tests_a100e3399de3f836cb31af356435e84c6}\label{class_account_tests_a100e3399de3f836cb31af356435e84c6}} 
+void {\bfseries Test\+Register\+\_\+\+Throws\+For\+Null\+Input} ()
+\begin{DoxyCompactList}\small\item\em Test sprawdzający, czy rejestracja wyrzuca wyjątek dla danych wejściowych będących null. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_account_tests_aebd6eec1ca3e1777cbc723c783228d28}\label{class_account_tests_aebd6eec1ca3e1777cbc723c783228d28}} 
+void {\bfseries Test\+Login\+\_\+\+Throws\+When\+Account\+Not\+Found} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Test parametryzowany sprawdzający, czy logowanie wyrzuca wyjątek w przypadku, gdy występuje próba zalogowania się na nieistniejące konto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa zawierająca testy związane z klasą \mbox{\hyperlink{class_account}{Account}} -\/ rejestracją i logowaniem użytkownika. 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Zamawianie\+Rolek.\+Tests/Account\+Tests.\+cs\end{DoxyCompactItemize}

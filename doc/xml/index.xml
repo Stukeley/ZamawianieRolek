@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="pl">
+  <compound refid="class_account" kind="class"><name>Account</name>
+    <member refid="class_account_1a8eddc4a572084f9718c603845ba4f3c4" kind="property"><name>Email</name></member>
+    <member refid="class_account_1ad0493ce3ac145f1a6bfb9c5cda7778bf" kind="property"><name>MoneyLeft</name></member>
+    <member refid="class_account_1af057d0d6ca1c14efc6eccf595c344856" kind="property"><name>Name</name></member>
+    <member refid="class_account_1a5608b2ba6ffd74fccbc03376061e7288" kind="property"><name>Surname</name></member>
+    <member refid="class_account_1a6e7434203ebfa5913e61c111565070a7" kind="property"><name>PhoneNumber</name></member>
+    <member refid="class_account_1ab52afb1c4f7ef43b68eede609072252b" kind="property"><name>Password</name></member>
+    <member refid="class_account_1a25908c1b9df9423589217df71c4be680" kind="property"><name>UserProfiles</name></member>
+    <member refid="class_account_1a902ee4e674b2104fe3526fe185a2d889" kind="property"><name>SelectedProfile</name></member>
+    <member refid="class_account_1a92f43c642cc5e081d627dadababd90b8" kind="function"><name>Account</name></member>
+    <member refid="class_account_1a71786445daefeae864bd3938eec3810a" kind="function"><name>LoginUser</name></member>
+    <member refid="class_account_1abef4b2cfa9a269db945d7cd7769ac338" kind="function"><name>RegisterWithUserData</name></member>
+    <member refid="class_account_1af500543527b47c8a6fb5eb2ed58e4223" kind="function"><name>RegisterWithGoogleAccount</name></member>
+    <member refid="class_account_1a3f67327534174e3279b3829f3d2168d5" kind="function"><name>AddUserProfile</name></member>
+    <member refid="class_account_1a08973c5daf5d2db216831698a36161d3" kind="function"><name>SelectUserProfile</name></member>
+    <member refid="class_account_1a6185edead4fbc890e0bcada220c03f44" kind="function"><name>VerifyEmail</name></member>
+    <member refid="class_account_1ac0f240dddec71766a59ffec6e9b8a29c" kind="function"><name>VerifyPhoneNumber</name></member>
+    <member refid="class_account_1a7832c957b405d0dd3fee67d0f0088f18" kind="function"><name>VerifyPassword</name></member>
+    <member refid="class_account_1ad66648f7cb6f01c11c0ab1578eea8a56" kind="function"><name>VerifyName</name></member>
+  </compound>
+  <compound refid="class_account_tests" kind="class"><name>AccountTests</name>
+    <member refid="class_account_tests_1adeb45372b1fa233d3e1f703168d763f4" kind="function"><name>Setup</name></member>
+    <member refid="class_account_tests_1aa15638865e7c0bcdd7f95ca57a8fef14" kind="function"><name>TestRegister_WorksForValidInput</name></member>
+    <member refid="class_account_tests_1a7b215c19e2c62f12329a41989b59508e" kind="function"><name>TestRegisterGoogle_WorksForValidInput</name></member>
+    <member refid="class_account_tests_1aec3489ae7824473abfe080bd60136c5e" kind="function"><name>TestRegister_ThrowsForInvalidInput</name></member>
+    <member refid="class_account_tests_1a100e3399de3f836cb31af356435e84c6" kind="function"><name>TestRegister_ThrowsForNullInput</name></member>
+    <member refid="class_account_tests_1aebd6eec1ca3e1777cbc723c783228d28" kind="function"><name>TestLogin_ThrowsWhenAccountNotFound</name></member>
+  </compound>
+  <compound refid="class_database" kind="class"><name>Database</name>
+    <member refid="class_database_1a032f060115c022c57a1dc3f0057320a7" kind="property"><name>Accounts</name></member>
+    <member refid="class_database_1a6ccd6db4e7ee4a4ca20d0a5209bf1ae6" kind="property"><name>Sheds</name></member>
+    <member refid="class_database_1a76ce33324145d5a1f22f996bc663fcac" kind="function"><name>AddAccountToDatabase</name></member>
+    <member refid="class_database_1a3589bc92bf9421fde1377a067104f255" kind="function"><name>AddShedToDatabase</name></member>
+  </compound>
+  <compound refid="class_database_tests" kind="class"><name>DatabaseTests</name>
+    <member refid="class_database_tests_1a145da22972c0f83433ef7d8613834601" kind="function"><name>Setup</name></member>
+    <member refid="class_database_tests_1a8f2ba3db0e8f71d3551ec26bb73ce426" kind="function"><name>AccountExistsAfterRegistration</name></member>
+    <member refid="class_database_tests_1ad166a90e40f6dc1c0469920c964b2d95" kind="function"><name>ShedExistsAfterAdd</name></member>
+    <member refid="class_database_tests_1aedd9f28688378a51c8e17cde90908ab8" kind="function"><name>ThrowsForNullParameter</name></member>
+  </compound>
+  <compound refid="class_program" kind="class"><name>Program</name>
+    <member refid="class_program_1aa93d521bf85bc2d063126776d0788658" kind="variable"><name>_currentAccount</name></member>
+    <member refid="class_program_1a92942dce7a2ab4f4d03faf22d2b37058" kind="property"><name>_isLoggedIn</name></member>
+    <member refid="class_program_1a13287fa4f799681145909749f391402d" kind="property"><name>_isUserProfileSelected</name></member>
+    <member refid="class_program_1ad22b0f776312e09174fc36a1e4bade60" kind="function"><name>Main</name></member>
+    <member refid="class_program_1a2409992ebd12c0fe90d7329e76d6d4fa" kind="function"><name>RegisterNewUser</name></member>
+    <member refid="class_program_1ad98413308183fec5b3926f5bb0ecd2bb" kind="function"><name>LoginUser</name></member>
+    <member refid="class_program_1aa6fc50d60e61598a7e967a6b3fef7da0" kind="function"><name>CreateUserProfile</name></member>
+    <member refid="class_program_1abd4523214f81cb8b63b4c494f2edff78" kind="function"><name>SelectUserProfile</name></member>
+    <member refid="class_program_1acad66c2e9b483860d388369f67d755c7" kind="function"><name>DisplayAllSheds</name></member>
+    <member refid="class_program_1ae6450f2f98ceb56e3e4dc6100b08ff73" kind="function"><name>LendSkates</name></member>
+    <member refid="class_program_1a63f9fc65d9512ff4887662f4df9f0e53" kind="function"><name>FinishRide</name></member>
+    <member refid="class_program_1ac66fd048bf16aa9d4433f6ee2645841a" kind="function"><name>SwitchTurbo</name></member>
+  </compound>
+  <compound refid="class_ride" kind="class"><name>Ride</name>
+    <member refid="class_ride_1a01adcd334a94609e6d052c7c26089f22" kind="property"><name>Skates</name></member>
+    <member refid="class_ride_1a373b014dfa655fe9d4258ec040fe69ae" kind="property"><name>StartTime</name></member>
+    <member refid="class_ride_1ab6ad21eb918a921206ff96d53a9d7552" kind="property"><name>FinishTime</name></member>
+    <member refid="class_ride_1ae7385b6828c208354d644eee50b715f0" kind="property"><name>TurboTime</name></member>
+    <member refid="class_ride_1a4024f4822b8989d09b0aaa2b13b13e4d" kind="property"><name>Distance</name></member>
+    <member refid="class_ride_1ae0118a214359126480aed70ec2021c04" kind="property"><name>RidePrice</name></member>
+    <member refid="class_ride_1a72ca790b63cb4438eaaa2adac5c1c69a" kind="function"><name>EvaluatePrice</name></member>
+    <member refid="class_ride_1ab45cce9ee05d31d87452af50eb0fe2d0" kind="function"><name>EvaluateTime</name></member>
+  </compound>
+  <compound refid="class_ride_tests" kind="class"><name>RideTests</name>
+    <member refid="class_ride_tests_1a0016a0b196b28141eef40ad075822214" kind="variable"><name>_account</name></member>
+    <member refid="class_ride_tests_1aed7f2edf6c4ba8deaabb7401ef14ba0d" kind="function"><name>Setup</name></member>
+    <member refid="class_ride_tests_1adfff7f7c702ba3305402634c3d0bf94c" kind="function"><name>EvaluatesPriceCorrectly</name></member>
+    <member refid="class_ride_tests_1adbb4c11e8284e280d528c64ff3a293fa" kind="function"><name>EvaluatesTimeCorrectly</name></member>
+    <member refid="class_ride_tests_1a676222c260e994eb2d1ced33360bc0f8" kind="function"><name>TurboModeSwitchesCorrectly</name></member>
+  </compound>
+  <compound refid="class_seeding" kind="class"><name>Seeding</name>
+    <member refid="class_seeding_1aec58923b224fd8cdcd6be71edbc09c74" kind="function"><name>SeedData</name></member>
+  </compound>
+  <compound refid="class_serialization" kind="class"><name>Serialization</name>
+    <member refid="class_serialization_1afc2036efceb42ce266224bb814407fdb" kind="variable"><name>AccountDataFileName</name></member>
+    <member refid="class_serialization_1af840af25b7e8e8a167b24f4a2284a655" kind="variable"><name>ShedDataFileName</name></member>
+    <member refid="class_serialization_1a166e0f73784d7f1fc77a6ba13bc408c2" kind="function"><name>SerializeDatabase</name></member>
+    <member refid="class_serialization_1aca39290a1248b745812908a03826caf3" kind="function"><name>DeserializeDatabase</name></member>
+  </compound>
+  <compound refid="class_shed" kind="class"><name>Shed</name>
+    <member refid="class_shed_1aa71d7338b9267baf3f885107d4389cd3" kind="property"><name>Id</name></member>
+    <member refid="class_shed_1a7587b4e01cfcac0f37ca256c8ad9fed2" kind="property"><name>TotalSkates</name></member>
+    <member refid="class_shed_1a7ae42288850a39a3ccd357435a4a2baf" kind="property"><name>TakenSkates</name></member>
+    <member refid="class_shed_1aa3f5f1fbe465365a76bf92792cd463b7" kind="property"><name>Localisation</name></member>
+    <member refid="class_shed_1a71a528955b1d326b084a6b6cd215f7f7" kind="property"><name>AvailableSkates</name></member>
+    <member refid="class_shed_1a99ef7704b533e3042b8d23589adc5fda" kind="function"><name>Shed</name></member>
+    <member refid="class_shed_1ad7fe287cdc4d47b1832bd5c3f9daf98c" kind="function"><name>OpenLocker</name></member>
+    <member refid="class_shed_1aea4adab23a70cd2425a8e1cc186b1be6" kind="function"><name>LockLocker</name></member>
+    <member refid="class_shed_1a679bd93ae07390c31107b67966bb33d8" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_skates" kind="class"><name>Skates</name>
+    <member refid="class_skates_1aac69e7eba05e3996f23ff0f0d695b324" kind="property"><name>ModelName</name></member>
+    <member refid="class_skates_1aa891b9e7706e066e2f18724720be4f10" kind="property"><name>Image</name></member>
+    <member refid="class_skates_1ad874a83db2d8ede8052b26b1ad67d249" kind="property"><name>Size</name></member>
+    <member refid="class_skates_1a6061ee801f5f0f58588ae6ac499287e7" kind="property"><name>Condition</name></member>
+    <member refid="class_skates_1a70c68f0d926ed308eb0057ae1823b7dc" kind="property"><name>IsTurboActive</name></member>
+    <member refid="class_skates_1a91f430ca42aef102fce8f9c61e027d62" kind="property"><name>BatteryPercentage</name></member>
+    <member refid="class_skates_1aaf7944da2beced6bccc3c057636980ca" kind="property"><name>IsLent</name></member>
+    <member refid="class_skates_1a0231754f63ff17d2fa50a45274a7c1ff" kind="function"><name>Skates</name></member>
+    <member refid="class_skates_1ab6eac4299a6cbce156cf11a3d3aeef9b" kind="function"><name>Turbo</name></member>
+    <member refid="class_skates_1a93d78c56c89ae9bc74aa4b454840db0a" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_user_profile" kind="class"><name>UserProfile</name>
+    <member refid="class_user_profile_1a04097e998e4eb5b22f8c88d041eed791" kind="property"><name>Name</name></member>
+    <member refid="class_user_profile_1ac2c1d2e8f1cae4e9a9fb51a30dcd5c48" kind="property"><name>FootSize</name></member>
+    <member refid="class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff" kind="property"><name>PaymentMethod</name></member>
+    <member refid="class_user_profile_1ab4eafe168f5e871abe47a6c3edc1d2ac" kind="property"><name>Ride</name></member>
+    <member refid="class_user_profile_1afcbee3cd6a843602094646d62a160a2c" kind="function"><name>UserProfile</name></member>
+    <member refid="class_user_profile_1aecc3794e0aa07732f73f6796be350a2a" kind="function"><name>CreateUser</name></member>
+  </compound>
+  <compound refid="class_user_profile_tests" kind="class"><name>UserProfileTests</name>
+    <member refid="class_user_profile_tests_1aa106fdf288171ea042e92b9c989cff74" kind="function"><name>Setup</name></member>
+    <member refid="class_user_profile_tests_1a6f5b27abef002c2d50ac7aead8d79956" kind="function"><name>ProfileExistsAfterCreating</name></member>
+    <member refid="class_user_profile_tests_1a605e2cd5b0d8409315b26e82b3f753fa" kind="function"><name>ThrowsForInvalidInput</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_n_unit_1_1_framework" kind="namespace"><name>NUnit::Framework</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="namespace_zamawianie_rolek_1_1_code_1_1_system" kind="namespace"><name>ZamawianieRolek::Code::System</name>
+  </compound>
+  <compound refid="namespace_zamawianie_rolek_1_1_code_1_1_user" kind="namespace"><name>ZamawianieRolek::Code::User</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_code_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_tests_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_u_i_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_code_8_assembly_info_8cs" kind="file"><name>ZamawianieRolek.Code.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_code_8_global_usings_8g_8cs" kind="file"><name>ZamawianieRolek.Code.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_database_8cs" kind="file"><name>Database.cs</name>
+  </compound>
+  <compound refid="_ride_8cs" kind="file"><name>Ride.cs</name>
+  </compound>
+  <compound refid="_seeding_8cs" kind="file"><name>Seeding.cs</name>
+  </compound>
+  <compound refid="_serialization_8cs" kind="file"><name>Serialization.cs</name>
+  </compound>
+  <compound refid="_shed_8cs" kind="file"><name>Shed.cs</name>
+  </compound>
+  <compound refid="_skates_8cs" kind="file"><name>Skates.cs</name>
+  </compound>
+  <compound refid="_account_8cs" kind="file"><name>Account.cs</name>
+  </compound>
+  <compound refid="_payment_method_8cs" kind="file"><name>PaymentMethod.cs</name>
+    <member refid="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465" kind="enum"><name>PaymentMethod</name></member>
+    <member refid="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465a38eb0c13548927ec00e0c21389f9fd3b" kind="enumvalue"><name>CreditCard</name></member>
+    <member refid="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465aad69e733ebae8d264bccaa38d68830e8" kind="enumvalue"><name>PayPal</name></member>
+  </compound>
+  <compound refid="_user_profile_8cs" kind="file"><name>UserProfile.cs</name>
+  </compound>
+  <compound refid="_account_tests_8cs" kind="file"><name>AccountTests.cs</name>
+  </compound>
+  <compound refid="_database_tests_8cs" kind="file"><name>DatabaseTests.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_tests_8_assembly_info_8cs" kind="file"><name>ZamawianieRolek.Tests.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_ride_tests_8cs" kind="file"><name>RideTests.cs</name>
+  </compound>
+  <compound refid="_user_profile_tests_8cs" kind="file"><name>UserProfileTests.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_u_i_8_assembly_info_8cs" kind="file"><name>ZamawianieRolek.UI.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_zamawianie_rolek_8_u_i_8_global_usings_8g_8cs" kind="file"><name>ZamawianieRolek.UI.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="dir_23a342b87a815fba9965654bcae92b26" kind="dir"><name>ZamawianieRolek.Code/obj/Debug</name>
+  </compound>
+  <compound refid="dir_e0ac648f146824b7bde95ace34b89b3c" kind="dir"><name>ZamawianieRolek.Tests/obj/Debug</name>
+  </compound>
+  <compound refid="dir_3a5c6f603fb80054a5e1b23ca9c1597d" kind="dir"><name>ZamawianieRolek.UI/obj/Debug</name>
+  </compound>
+  <compound refid="dir_9cb3886d8d092e9d616db99a352fe2e0" kind="dir"><name>ZamawianieRolek.Code/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_b91bcfe6cdb2302e0e36555e3b317927" kind="dir"><name>ZamawianieRolek.Tests/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_57085313c7fc738aad2b241d7767713b" kind="dir"><name>ZamawianieRolek.UI/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_30b09f0d4da6adbd5626c224f311de9d" kind="dir"><name>ZamawianieRolek.Code/obj</name>
+  </compound>
+  <compound refid="dir_26dac72013fd4dd740ef8e9e9684ffea" kind="dir"><name>ZamawianieRolek.Tests/obj</name>
+  </compound>
+  <compound refid="dir_9df03fa9b928523419ae55f383b62329" kind="dir"><name>ZamawianieRolek.UI/obj</name>
+  </compound>
+  <compound refid="dir_c44ba3b5a6bc3a426177bdb16e3c575f" kind="dir"><name>ZamawianieRolek.Code/System</name>
+  </compound>
+  <compound refid="dir_b40e46e2a5f29b05ec0cbc85b19ed7cb" kind="dir"><name>ZamawianieRolek.Code/User</name>
+  </compound>
+  <compound refid="dir_bd28d0cdbd768520345eb65b0fc393f8" kind="dir"><name>ZamawianieRolek.Code</name>
+  </compound>
+  <compound refid="dir_84f4734cba170cc2f2f0dc398d64d354" kind="dir"><name>ZamawianieRolek.Tests</name>
+  </compound>
+  <compound refid="dir_2c9f9f476fac78dd005d2152bb25b180" kind="dir"><name>ZamawianieRolek.UI</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,96 @@
+.TH "Skates" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Skates \- Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBSkates\fP (string modelName, byte[] image, float size, bool condition)"
+.br
+.RI "Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami\&. Bateria jest początkowo ustawiana na wartość 1\&.00\&. "
+.ti -1c
+.RI "void \fBTurbo\fP ()"
+.br
+.RI "Funkcja przełączająca tryb turbo we wrotkach\&. Jeżeli turbo jest aktywne, wówczas zostanie wyłączone; jeżeli nie, zostanie włączone\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis\&. "
+.in -1c
+.SS "Właściwości"
+
+.in +1c
+.ti -1c
+.RI "string \fBModelName\fP\fC [get]\fP"
+.br
+.RI "Nazwa modelu wrotek\&. "
+.ti -1c
+.RI "byte[] \fBImage\fP\fC [get]\fP"
+.br
+.RI "Obraz jako tablica bajtów, przedstawiający wrotki\&. "
+.ti -1c
+.RI "float \fBSize\fP\fC [get]\fP"
+.br
+.RI "Rozmiar wrotek\&. "
+.ti -1c
+.RI "bool \fBCondition\fP\fC [get, set]\fP"
+.br
+.RI "Stan wrotek\&. "
+.ti -1c
+.RI "bool \fBIsTurboActive\fP\fC [get, set]\fP"
+.br
+.RI "Zmienna informująca, czy w danym momencie aktywny jest tryb turbo\&. "
+.ti -1c
+.RI "float \fBBatteryPercentage\fP\fC [get, set]\fP"
+.br
+.RI "Stan baterii wrotek - liczba z przedziału od 0\&.00 do 1\&.00\&. "
+.ti -1c
+.RI "bool \fBIsLent\fP\fC [get, set]\fP"
+.br
+.RI "Zmienna informująca, czy wrotki są w danym momencie wypożyczone\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przedstawiająca wrotki, które można wypożyczyć w wiacie\&. 
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Skates\&.Skates (string modelName, byte[] image, float size, bool condition)"
+
+.PP
+Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami\&. Bateria jest początkowo ustawiana na wartość 1\&.00\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fImodelName\fP Nazwa modelu nowopowstałych wrotek\&.
+.br
+\fIimage\fP Zdjęcie nowopowstałych wrotek\&.
+.br
+\fIsize\fP Rozmiar nowopowstałych wrotek\&.
+.br
+\fIcondition\fP Stan nowopowstałych wrotek\&.
+.RE
+.PP
+
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "override string Skates\&.ToString ()"
+
+.PP
+Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Napis, przedstawiający wrotki, gotowy do wyświetlenia np\&. w oknie konsoli\&.
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

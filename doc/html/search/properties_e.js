@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['takenskates_0',['TakenSkates',['../class_shed.html#a7ae42288850a39a3ccd357435a4a2baf',1,'Shed']]],
-  ['totalskates_1',['TotalSkates',['../class_shed.html#a7587b4e01cfcac0f37ca256c8ad9fed2',1,'Shed']]],
-  ['turbotime_2',['TurboTime',['../class_ride.html#ae7385b6828c208354d644eee50b715f0',1,'Ride']]]
+  ['userprofiles_0',['UserProfiles',['../class_account.html#a25908c1b9df9423589217df71c4be680',1,'Account']]]
 ];

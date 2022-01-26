@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ride_0',['Ride',['../class_ride.html',1,'']]]
+  ['shed_0',['Shed',['../class_shed.html',1,'']]],
+  ['skates_1',['Skates',['../class_skates.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['email_0',['Email',['../class_account.html#a8eddc4a572084f9718c603845ba4f3c4',1,'Account']]],
-  ['evaluateprice_1',['EvaluatePrice',['../class_ride.html#a72ca790b63cb4438eaaa2adac5c1c69a',1,'Ride']]],
-  ['evaluatetime_2',['EvaluateTime',['../class_ride.html#ab45cce9ee05d31d87452af50eb0fe2d0',1,'Ride']]]
+  ['finishtime_0',['FinishTime',['../class_ride.html#ab6ad21eb918a921206ff96d53a9d7552',1,'Ride']]],
+  ['footsize_1',['FootSize',['../class_user_profile.html#ac2c1d2e8f1cae4e9a9fb51a30dcd5c48',1,'UserProfile']]]
 ];

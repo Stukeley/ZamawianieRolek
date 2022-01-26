@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="pl">
+    <info>
+    <title>Zamawianie Rolek</title>
+    </info>
+<chapter>
+    <title>Dokumentacja klas</title>
+    <xi:include href="class_account.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_account_tests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_database_tests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_ride.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_ride_tests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_shed.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_skates.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_user_profile.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_user_profile_tests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

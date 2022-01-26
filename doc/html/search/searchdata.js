@@ -1,10 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefilmnoprstu",
-  1: "adprsu",
-  2: "acdeflmorstu",
-  3: "_as",
-  4: "_abcdefilmnprstu"
+  0: "abcdefilmnoprstu",
+  1: "adrsu",
+  2: "aceloprst",
+  3: "abcdefilmnprstu"
 };
 
 var indexSectionNames =
@@ -12,8 +11,7 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "variables",
-  4: "properties"
+  3: "properties"
 };
 
 var indexSectionLabels =
@@ -21,7 +19,6 @@ var indexSectionLabels =
   0: "Wszystko",
   1: "Klasy",
   2: "Funkcje",
-  3: "Zmienne",
-  4: "Właściwości"
+  3: "Właściwości"
 };
 

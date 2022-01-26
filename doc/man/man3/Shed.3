@@ -1,0 +1,90 @@
+.TH "Shed" 3 "Śr, 26 sty 2022" "Zamawianie Rolek" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shed \- Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBShed\fP (int totalSkates, int id, string localisation)"
+.br
+.RI "Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami\&. "
+.ti -1c
+.RI "void \fBOpenLocker\fP ()"
+.br
+.RI "Funkcja otwierająca szafkę z wrotkami, wywoływana w momencie wypożyczenia wrotek przez użytkownika\&. "
+.ti -1c
+.RI "void \fBLockLocker\fP ()"
+.br
+.RI "Funkcja zamykająca szafkę z wrotkami, wywoływana bezpośrednio po funkcji OpenLocker\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis\&. "
+.in -1c
+.SS "Właściwości"
+
+.in +1c
+.ti -1c
+.RI "int \fBId\fP\fC [get]\fP"
+.br
+.RI "Id wiaty\&. "
+.ti -1c
+.RI "int \fBTotalSkates\fP\fC [get, set]\fP"
+.br
+.RI "Łączna ilość wrotek, które znajdują się w wiacie\&. "
+.ti -1c
+.RI "int \fBTakenSkates\fP\fC [get, set]\fP"
+.br
+.RI "Ilość wrotek, które zostały wypożyczone i są obecnie niedostępne\&. "
+.ti -1c
+.RI "string \fBLocalisation\fP\fC [get, set]\fP"
+.br
+.RI "Lokalizacja wiaty\&. "
+.ti -1c
+.RI "List< \fBSkates\fP > \fBAvailableSkates\fP\fC [get, set]\fP"
+.br
+.RI "Lista zawierająca wszystkie dostępne do wypożyczenia w wiacie wrotki\&. "
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa przedstawiająca wiatę o danej lokalizacji, zawierającą wrotki, które można wypożyczyć\&. 
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Shed\&.Shed (int totalSkates, int id, string localisation)"
+
+.PP
+Domyślny konstruktor, inicijalizujący obiekt podanymi wartościami\&. 
+.PP
+\fBParametry\fP
+.RS 4
+\fItotalSkates\fP Ilość wrotek, które znajdują się w nowopowstałej wiacie\&.
+.br
+\fIid\fP Id nowopowstałej wiaty\&.
+.br
+\fIlocalisation\fP Lokalizacja nowopowstałej wiaty\&.
+.RE
+.PP
+
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "override string Shed\&.ToString ()"
+
+.PP
+Przeciążona funkcja, zwracająca reprezentację obiektu i wartości jego pól jako napis\&. 
+.PP
+\fBZwraca\fP
+.RS 4
+Napis, przedstawiający wiatę, gotowy do wyświetlenia np\&. w oknie konsoli\&.
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla Zamawianie Rolek\&.

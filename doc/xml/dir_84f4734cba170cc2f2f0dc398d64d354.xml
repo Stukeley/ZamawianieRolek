@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="dir_84f4734cba170cc2f2f0dc398d64d354" kind="dir">
+    <compoundname>ZamawianieRolek.Tests</compoundname>
+    <innerdir refid="dir_26dac72013fd4dd740ef8e9e9684ffea">ZamawianieRolek.Tests/obj</innerdir>
+    <innerfile refid="_account_tests_8cs">AccountTests.cs</innerfile>
+    <innerfile refid="_database_tests_8cs">DatabaseTests.cs</innerfile>
+    <innerfile refid="_ride_tests_8cs">RideTests.cs</innerfile>
+    <innerfile refid="_user_profile_tests_8cs">UserProfileTests.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Tests/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="dir_57085313c7fc738aad2b241d7767713b" kind="dir">
+    <compoundname>ZamawianieRolek.UI/obj/Debug/net6.0</compoundname>
+    <innerfile refid="_zamawianie_rolek_8_u_i_2obj_2_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_zamawianie_rolek_8_u_i_8_assembly_info_8cs">ZamawianieRolek.UI.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_zamawianie_rolek_8_u_i_8_global_usings_8g_8cs">ZamawianieRolek.UI.GlobalUsings.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.UI/obj/Debug/net6.0/"/>
+  </compounddef>
+</doxygen>

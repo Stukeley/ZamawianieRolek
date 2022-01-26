@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_user_profile_tests" kind="class" language="C#" prot="public">
+    <compoundname>UserProfileTests</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_user_profile_tests_1aa106fdf288171ea042e92b9c989cff74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserProfileTests.Setup</definition>
+        <argsstring>()</argsstring>
+        <name>Setup</name>
+        <qualifiedname>UserProfileTests.Setup</qualifiedname>
+        <briefdescription>
+<para>Funkcja setup, inicjalizująca bazę danych przed każdym wywołanym testem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/UserProfileTests.cs" line="18" column="13" bodyfile="ZamawianieRolek.Tests/UserProfileTests.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_profile_tests_1a6f5b27abef002c2d50ac7aead8d79956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserProfileTests.ProfileExistsAfterCreating</definition>
+        <argsstring>()</argsstring>
+        <name>ProfileExistsAfterCreating</name>
+        <qualifiedname>UserProfileTests.ProfileExistsAfterCreating</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy po utworzeniu profilu użytkownika jest on przypisany do konta, oraz czy jest on aktualnie wybranym profilem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/UserProfileTests.cs" line="27" column="13" bodyfile="ZamawianieRolek.Tests/UserProfileTests.cs" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_profile_tests_1a605e2cd5b0d8409315b26e82b3f753fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserProfileTests.ThrowsForInvalidInput</definition>
+        <argsstring>()</argsstring>
+        <name>ThrowsForInvalidInput</name>
+        <qualifiedname>UserProfileTests.ThrowsForInvalidInput</qualifiedname>
+        <briefdescription>
+<para>Test sprawdzający, czy funkcja tworząca profil użytkownika wyrzuca wyjątek dla niepoprawnych danych wejściowych. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Tests/UserProfileTests.cs" line="44" column="13" bodyfile="ZamawianieRolek.Tests/UserProfileTests.cs" bodystart="44" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa zawierająca testy związane z klasą <ref refid="class_user_profile" kindref="compound">UserProfile</ref> - profilem użytkownika w ramach konta. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Tests/UserProfileTests.cs" line="12" column="7" bodyfile="ZamawianieRolek.Tests/UserProfileTests.cs" bodystart="13" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_user_profile_tests_1a6f5b27abef002c2d50ac7aead8d79956" prot="public" virt="non-virtual"><scope>UserProfileTests</scope><name>ProfileExistsAfterCreating</name></member>
+      <member refid="class_user_profile_tests_1aa106fdf288171ea042e92b9c989cff74" prot="public" virt="non-virtual"><scope>UserProfileTests</scope><name>Setup</name></member>
+      <member refid="class_user_profile_tests_1a605e2cd5b0d8409315b26e82b3f753fa" prot="public" virt="non-virtual"><scope>UserProfileTests</scope><name>ThrowsForInvalidInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

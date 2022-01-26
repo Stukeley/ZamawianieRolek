@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="_payment_method_8cs" kind="file" language="C#">
+    <compoundname>PaymentMethod.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PaymentMethod</name>
+        <enumvalue id="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465a38eb0c13548927ec00e0c21389f9fd3b" prot="public">
+          <name>CreditCard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_payment_method_8cs_1afa0c4b1d62c95b1538abce2a6c707465aad69e733ebae8d264bccaa38d68830e8" prot="public">
+          <name>PayPal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Typ wyliczeniowy, zawierający możliwe w aplikacji metody płatności - karta kredytowa lub konto PayPal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/PaymentMethod.cs" line="6" column="7" bodyfile="ZamawianieRolek.Code/User/PaymentMethod.cs" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ZamawianieRolek.Code.User;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>PaymentMethod</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>CreditCard,<sp/>PayPal</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ZamawianieRolek.Code/User/PaymentMethod.cs"/>
+  </compounddef>
+</doxygen>

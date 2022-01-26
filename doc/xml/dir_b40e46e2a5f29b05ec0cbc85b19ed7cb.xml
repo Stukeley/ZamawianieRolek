@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="dir_b40e46e2a5f29b05ec0cbc85b19ed7cb" kind="dir">
+    <compoundname>ZamawianieRolek.Code/User</compoundname>
+    <innerfile refid="_account_8cs">Account.cs</innerfile>
+    <innerfile refid="_payment_method_8cs">PaymentMethod.cs</innerfile>
+    <innerfile refid="_user_profile_8cs">UserProfile.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/User/"/>
+  </compounddef>
+</doxygen>

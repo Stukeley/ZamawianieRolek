@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="pl">
+  <compounddef id="class_user_profile" kind="class" language="C#" prot="public">
+    <compoundname>UserProfile</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_user_profile_1a04097e998e4eb5b22f8c88d041eed791" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string UserProfile.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>UserProfile.Name</qualifiedname>
+        <briefdescription>
+<para>Nazwa profilu użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="13" column="15" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_user_profile_1ac2c1d2e8f1cae4e9a9fb51a30dcd5c48" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UserProfile.FootSize</definition>
+        <argsstring></argsstring>
+        <name>FootSize</name>
+        <qualifiedname>UserProfile.FootSize</qualifiedname>
+        <briefdescription>
+<para>Rozmiar stopy użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="18" column="14" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>PaymentMethod</type>
+        <definition>PaymentMethod UserProfile.PaymentMethod</definition>
+        <argsstring></argsstring>
+        <name>PaymentMethod</name>
+        <qualifiedname>UserProfile.PaymentMethod</qualifiedname>
+        <briefdescription>
+<para>Metoda płatności podłączona do profilu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="23" column="22" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_user_profile_1ab4eafe168f5e871abe47a6c3edc1d2ac" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_ride" kindref="compound">Ride</ref></type>
+        <definition>Ride UserProfile.Ride</definition>
+        <argsstring></argsstring>
+        <name>Ride</name>
+        <qualifiedname>UserProfile.Ride</qualifiedname>
+        <briefdescription>
+<para>Obecnie aktywny przejazd użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="28" column="13" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_user_profile_1afcbee3cd6a843602094646d62a160a2c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UserProfile.UserProfile</definition>
+        <argsstring>(string name, float footSize, PaymentMethod paymentMethod)</argsstring>
+        <name>UserProfile</name>
+        <qualifiedname>UserProfile.UserProfile</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>footSize</declname>
+        </param>
+        <param>
+          <type><ref refid="class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff" kindref="member">PaymentMethod</ref></type>
+          <declname>paymentMethod</declname>
+        </param>
+        <briefdescription>
+<para>Domyślny, prywatny konstruktor, inicijalizujący obiekt podanymi wartościami. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwa nowopowstałego profilu.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>footSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rozmiar stopy użytkownika.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paymentMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wybrany przez użytkownika sposób płatności.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="36" column="9" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_user_profile_1aecc3794e0aa07732f73f6796be350a2a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_user_profile" kindref="compound">UserProfile</ref></type>
+        <definition>static UserProfile UserProfile.CreateUser</definition>
+        <argsstring>(string name, float footSize, PaymentMethod paymentMethod)</argsstring>
+        <name>CreateUser</name>
+        <qualifiedname>UserProfile.CreateUser</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>footSize</declname>
+        </param>
+        <param>
+          <type><ref refid="class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff" kindref="member">PaymentMethod</ref></type>
+          <declname>paymentMethod</declname>
+        </param>
+        <briefdescription>
+<para>Funkcja tworząca nowy profil użytkownika za pomocą danych wpisanych przy pomocy interfejsu użytkownika. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nazwa podana przy tworzeniu profilu.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>footSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rozmiar stopy podany przy tworzeniu profilu.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paymentMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Metoda płatności wybrana przy tworzeniu profilu.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Utworzony profil użytkownika.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="50" column="27" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="50" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa przedstawiająca profil użytkownika w ramach konta. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ZamawianieRolek.Code/User/UserProfile.cs" line="8" column="7" bodyfile="ZamawianieRolek.Code/User/UserProfile.cs" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_user_profile_1aecc3794e0aa07732f73f6796be350a2a" prot="public" virt="non-virtual"><scope>UserProfile</scope><name>CreateUser</name></member>
+      <member refid="class_user_profile_1ac2c1d2e8f1cae4e9a9fb51a30dcd5c48" prot="public" virt="non-virtual"><scope>UserProfile</scope><name>FootSize</name></member>
+      <member refid="class_user_profile_1a04097e998e4eb5b22f8c88d041eed791" prot="public" virt="non-virtual"><scope>UserProfile</scope><name>Name</name></member>
+      <member refid="class_user_profile_1ac191826244d1d5cf43575d5ab3df9bff" prot="public" virt="non-virtual"><scope>UserProfile</scope><name>PaymentMethod</name></member>
+      <member refid="class_user_profile_1ab4eafe168f5e871abe47a6c3edc1d2ac" prot="public" virt="non-virtual"><scope>UserProfile</scope><name>Ride</name></member>
+      <member refid="class_user_profile_1afcbee3cd6a843602094646d62a160a2c" prot="private" virt="non-virtual"><scope>UserProfile</scope><name>UserProfile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
