@@ -334,6 +334,20 @@
             <param name="profileName">Nazwa profilu, który ma zostać wybrany.</param>
             <exception cref="T:System.Exception">Wyjątek rzucany gdy użytkownik poda nazwę profilu, która nie istnieje.</exception>
         </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.VerifyEmail(System.String)">
+            <summary>
+            Funkcja sprawdzająca, czy podany email jest poprawny (zawiera znak '@').
+            </summary>
+            <param name="email">Podany przy rejestracji lub logowaniu przez użytkownika adres email.</param>
+            <returns>True, jeżeli email jest poprawny - zawiera znak '@'. W przeciwnym wypadku false.</returns>
+        </member>
+        <member name="M:ZamawianieRolek.Code.User.Account.VerifyPhoneNumber(System.String)">
+            <summary>
+            Funkcja sprawdzająca, czy podany numer telefonu jest poprawny (ma 9 znaków i nie zawiera znaków innych niż cyfry).
+            </summary>
+            <param name="phoneNumber">Podany przy rejestracji przez użytkownika numer telefonu.</param>
+            <returns>True, jeżeli numer telefonu jest poprawny - ma długość równą 9 oraz zawiera tylko cyfry. W przeciwnym wypadku false.</returns>
+        </member>
         <member name="T:ZamawianieRolek.Code.User.PaymentMethod">
             <summary>
             Typ wyliczeniowy, zawierający możliwe w aplikacji metody płatności - karta kredytowa lub konto PayPal.

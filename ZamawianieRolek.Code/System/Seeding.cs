@@ -1,4 +1,6 @@
-﻿namespace ZamawianieRolek.Code.System;
+﻿using ZamawianieRolek.Code.User;
+
+namespace ZamawianieRolek.Code.System;
 
 /// <summary>
 /// Statyczna klasa wykorzystywana na potrzeby seedowania bazy danych przy pierwszym uruchomieniu aplikacji.
@@ -10,6 +12,9 @@ public static class Seeding
 	/// </summary>
 	public static void SeedData()
 	{
+		Database.Accounts = new List<Account>();
+		Database.Sheds = new List<Shed>();
+
 		if (Database.Sheds.Count != 0)
 		{
 			return;

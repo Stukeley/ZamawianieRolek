@@ -49,6 +49,11 @@ public class UserProfile
 	/// <returns>Utworzony profil użytkownika.</returns>
 	public static UserProfile CreateUser(string name, float footSize, PaymentMethod paymentMethod)
 	{
+		if (name?.Length == 0)
+		{
+			throw new Exception("User Profile name cannot be null or empty!");
+		}
+
 		var userProfile = new UserProfile(name, footSize, paymentMethod);
 
 		return userProfile;

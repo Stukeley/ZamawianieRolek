@@ -103,6 +103,31 @@ public class Account
 	/// <returns></returns>
 	public static Account RegisterWithUserData(string email, string name, string surname, string password, string phoneNumber)
 	{
+		if (email == null || name == null || surname == null || password == null || phoneNumber == null)
+		{
+			throw new Exception("Some of the parameters were null!");
+		}
+		
+		if (!VerifyEmail(email))
+		{
+			throw new Exception("Email must contain the @ sign!");
+		}
+
+		if (!VerifyPhoneNumber(phoneNumber))
+		{
+			throw new Exception("Phone number must contain exactly 9 digits, and no other characters!");
+		}
+
+		if (!VerifyPassword(password))
+		{
+			throw new Exception("Password cannot be empty!");
+		}
+
+		if (!VerifyName(name) || !VerifyName(surname))
+		{
+			throw new Exception("Name and surname cannot contain digits, and cannot be empty");
+		}
+
 		var account = new Account(email, name, surname, phoneNumber, password);
 
 		Database.AddAccountToDatabase(account);
@@ -119,12 +144,22 @@ public class Account
 	/// <returns></returns>
 	public static Account RegisterWithGoogleAccount(string email, string password)
 	{
+		if (!VerifyEmail(email))
+		{
+			throw new Exception("Email must contain the @ sign!");
+		}
+
+		if (!VerifyPassword(password))
+		{
+			throw new Exception("Password cannot be empty!");
+		}
+
 		var rng = new Random();
 		string name = "Name" + rng.Next(10000);
 		string surname = "Surname" + rng.Next(10000);
 		string phoneNumber = "123456789";
 
-		var account = new Account(email, name, surname, password, phoneNumber);
+		var account = new Account(email, name, surname, phoneNumber, password);
 
 		Database.AddAccountToDatabase(account);
 
@@ -156,5 +191,35 @@ public class Account
 		}
 
 		SelectedProfile = selectedProfile;
+	}
+
+	/// <summary>
+	/// Funkcja sprawdzająca, czy podany email jest poprawny (zawiera znak '@').
+	/// </summary>
+	/// <param name="email">Podany przy rejestracji lub logowaniu przez użytkownika adres email.</param>
+	/// <returns>True, jeżeli email jest poprawny - zawiera znak '@'. W przeciwnym wypadku false.</returns>
+	private static bool VerifyEmail(string email)
+	{
+		return email.Contains('@');
+	}
+
+	/// <summary>
+	/// Funkcja sprawdzająca, czy podany numer telefonu jest poprawny (ma 9 znaków i nie zawiera znaków innych niż cyfry).
+	/// </summary>
+	/// <param name="phoneNumber">Podany przy rejestracji przez użytkownika numer telefonu.</param>
+	/// <returns>True, jeżeli numer telefonu jest poprawny - ma długość równą 9 oraz zawiera tylko cyfry. W przeciwnym wypadku false.</returns>
+	private static bool VerifyPhoneNumber(string phoneNumber)
+	{
+		return phoneNumber.Length == 9 && phoneNumber.All(char.IsDigit);
+	}
+
+	private static bool VerifyPassword(string password)
+	{
+		return password.Length > 0;
+	}
+
+	private static bool VerifyName(string name)
+	{
+		return name.Length > 0 && !name.All(char.IsDigit);
 	}
 }

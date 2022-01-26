@@ -27,6 +27,11 @@ public static class Database
 	/// <param name="newAccount">Konto użytkownika do dodania.</param>
 	public static void AddAccountToDatabase(Account newAccount)
 	{
+		if (newAccount is null)
+		{
+			throw new Exception("Account cannot be null!");
+		}
+
 		Accounts.Add(newAccount);
 	}
 
@@ -36,6 +41,11 @@ public static class Database
 	/// <param name="newShed">Wiata do dodania.</param>
 	public static void AddShedToDatabase(Shed newShed)
 	{
+		if (newShed is null)
+		{
+			throw new Exception("Shed cannot be null!");
+		}
+		
 		Sheds.Add(newShed);
 	}
 }

@@ -167,6 +167,7 @@ public static class Program
 			catch (Exception ex)
 			{
 				Console.WriteLine(ex.Message);
+				return;
 			}
 		}
 		else
@@ -190,6 +191,7 @@ public static class Program
 			catch (Exception ex)
 			{
 				Console.WriteLine(ex.Message);
+				return;
 			}
 		}
 	}
@@ -229,6 +231,7 @@ public static class Program
 		catch (Exception ex)
 		{
 			Console.WriteLine(ex.Message);
+			return;
 		}
 	}
 
@@ -253,7 +256,14 @@ public static class Program
 			name = Console.ReadLine();
 
 			Console.WriteLine("What is your foot size?");
-			footSize = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+			bool floatParsed = float.TryParse(Console.ReadLine(), out footSize);
+
+			if (!floatParsed)
+			{
+				Console.WriteLine("Foot size must be a number!");
+				return;
+			}
 
 			Console.WriteLine("Type in your payment method (1 - Credit Card, else - PayPal): ");
 			paymentChoice = Console.ReadLine();
@@ -408,6 +418,12 @@ public static class Program
 	/// </summary>
 	private static void SwitchTurbo()
 	{
+		if (!(_isLoggedIn && _isUserProfileSelected))
+		{
+			Console.WriteLine("Log in AND select user profile first!");
+			return;
+
+		}
 		if (_currentAccount.SelectedProfile.Ride == null)
 		{
 			Console.WriteLine("This profile isn't currently lending skates!");
